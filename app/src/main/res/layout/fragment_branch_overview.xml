@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.upster.app.widget.SingleTouchScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/common_minimum_vertical_separation"
+                android:background="@color/transparente"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingLeft="@dimen/common_minimum_horizontal_margin"
+                android:paddingRight="@dimen/common_minimum_horizontal_margin"
+                android:paddingTop="2dp" >
+
+                <ToggleButton
+                    android:id="@+id/tgg_favorite"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/icono_club_amores"
+                    android:textOff="@null"
+                    android:textOn="@null"
+                    android:visibility="visible"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/txt_branch_name" />
+
+                <TextView
+                    android:id="@+id/txt_proximity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="km"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_branch_name"
+                    android:layout_marginLeft="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_branch_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Amores"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_marginBottom="@dimen/common_minimum_horizontal_margin"
+                    android:layout_marginLeft="@dimen/common_minimum_horizontal_margin"
+                    android:layout_marginRight="@dimen/common_minimum_horizontal_margin"
+                    android:background="@color/transparente"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/txt_address"
+                    android:layout_width="153dp"
+                    android:layout_height="70dp"
+                    android:background="#8c4f015d"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_alignBottom="@+id/pager"
+                    android:layout_alignLeft="@+id/pager"
+                    android:layout_toLeftOf="@+id/btn_call" />
+
+                <Button
+                    android:id="@+id/btn_call"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_alignBottom="@+id/pager"
+                    android:layout_alignRight="@+id/pager"
+                    android:drawableTop="@drawable/icono_movil"
+                    android:scaleType="fitXY"
+                    android:background="#b44f015d" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:layout_marginLeft="@dimen/common_minimum_horizontal_margin"
+                android:layout_marginRight="@dimen/common_minimum_horizontal_margin"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.49"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_show_classes"
+                        android:text="@string/classes"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/transparente"
+                        android:drawableLeft="@drawable/icono_clases2"
+                        android:gravity="left"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="50dp"
+                        android:drawableRight="@drawable/angle_gris"
+                        android:drawablePadding="30dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        style="@style/Button.BranchOverviewActions" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textView14"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:background="#fffd9d01"
+                    android:focusable="false" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                    <Button
+                        android:id="@+id/btn_show_facilities"
+                        style="@style/Button.BranchOverviewActions"
+                        android:text="@string/facilities"
+                        android:textColor="@color/black"
+                        android:drawableLeft="@drawable/icono_instalaciones"
+                        android:gravity="left"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="50dp"
+                        android:drawableRight="@drawable/angle_gris"
+                        android:drawablePadding="30dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_width="match_parent" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textView1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:background="#fffd9d01"
+                    android:focusable="false" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                    <Button
+                        android:id="@+id/btn_virtual_tour"
+                        style="@style/Button.BranchOverviewActions"
+                        android:text="@string/virtual_tour"
+                        android:textColor="@color/black"
+                        android:drawableLeft="@drawable/icono_recorrido"
+                        android:gravity="left"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="50dp"
+                        android:drawableRight="@drawable/angle_gris"
+                        android:drawablePadding="30dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_show_location"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="@string/show_location"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/boton_verubicacion" />
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</com.upster.app.widget.SingleTouchScrollView>

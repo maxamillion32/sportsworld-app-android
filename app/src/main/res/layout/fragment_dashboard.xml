@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/back_transparente">
+
+        <!--<ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:contentDescription="@string/app_name"
+            android:paddingBottom="10dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:src="@drawable/logo_upster"
+            android:id="@+id/imageView4"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>-->
+
+       <!-- <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:id="@+id/frameLayout">
+            </FrameLayout>
+        -->
+
+
+            <Button
+            android:id="@+id/mgb_go_to_clubs"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:drawableTop="@drawable/icn_clubes_off"
+            android:background="@drawable/selectable_background"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_toLeftOf="@+id/textView13"
+            android:layout_toStartOf="@+id/textView13"/>
+
+        <Button
+            android:id="@+id/btn_clases"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/selectable_background"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff000000"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/icn_clases_off"
+            android:textSize="30dp"
+            android:layout_weight="0.33"
+            android:layout_below="@+id/mgb_go_to_clubs"
+            android:layout_alignLeft="@+id/mgb_go_to_clubs"
+            android:layout_alignStart="@+id/mgb_go_to_clubs"/>
+
+        <Button
+                android:id = "@+id/btn_rutinas"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:drawableTop="@drawable/icn_rutinas_off"
+                android:textSize="30dp"
+                android:layout_weight = ".033"
+                android:background="@drawable/selectable_background"
+                android:layout_below="@+id/btn_noticias"
+                android:layout_alignLeft="@+id/mgb_go_to_clubs"
+                android:layout_alignStart="@+id/mgb_go_to_clubs"/>
+
+        <Button
+            android:id = "@+id/btn_noticias"
+            android:drawableTop="@drawable/icn_noticias_off"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/selectable_background"
+            android:layout_alignLeft="@+id/btn_clases"
+            android:layout_below="@+id/btn_clases"
+            />
+
+        <Button
+            android:id="@+id/btn_upster"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/selectable_background"
+            android:adjustViewBounds="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff000000"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/que_es_upster"
+            android:textSize="30dp"
+            android:layout_weight="0.33"
+            android:layout_below="@+id/btn_rutinas"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+
+        TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/textView13"
+            android:layout_marginTop="71dp"
+            android:layout_below="@+id/imageView4"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView5"
+            android:background="@drawable/barra_slide_derecho"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true" />
+
+        EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_below="@+id/imageView4"
+            android:layout_alignLeft="@+id/btn_upster"
+            android:layout_alignStart="@+id/btn_upster"
+            android:text="Clases"
+            android:textColor="#000000"/>
+
+        EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:text="Clases"
+            android:textColor="#000000"
+            android:layout_alignBaseline="@+id/btn_clases"
+            android:layout_alignBottom="@+id/btn_clases"
+            android:layout_toRightOf="@+id/btn_clases"
+            android:layout_toEndOf="@+id/btn_clases"/>
+
+        EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText3"
+            android:text="Clases"
+            android:textColor="#000000"
+            android:layout_alignBaseline="@+id/btn_noticias"
+            android:layout_alignBottom="@+id/btn_noticias"
+            android:layout_toRightOf="@+id/btn_noticias"
+            android:layout_toEndOf="@+id/btn_noticias"/>
+
+        EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText4"
+            android:text="Clases"
+            android:textColor="#000000"
+            android:layout_above="@+id/btn_upster"
+            android:layout_alignLeft="@+id/btn_upster"
+            android:layout_alignStart="@+id/btn_upster"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

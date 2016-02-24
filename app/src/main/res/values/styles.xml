@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="ActionBar.Solid.SportsWorld" parent="@style/Widget.Sherlock.Light.ActionBar.Solid">
+        <item name="background">@color/white</item>
+    </style>
+
+    <style name="PopupMenu.SportsWorld" parent="@style/Widget.Sherlock.Light.ListPopupWindow">
+        <item name="android:popupBackground">@color/morado_toast</item>
+    </style>
+
+    <style name="DropDownListView.SportsWorld" parent="@style/Widget.Sherlock.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background</item>
+    </style>
+
+    <style name="ListView.SportsWorld" parent="android:style/Widget.ListView">
+        <item name="android:cacheColorHint">@color/black</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:editTextColor">@color/black</item>
+        <item name="android:textColorHighlight">@color/white</item>
+        <item name="android:listSelector">@drawable/selectable_background</item>
+    </style>
+
+    <style name="ExpandableListView.SportsWorld" parent="android:style/Widget.ExpandableListView">
+        <item name="android:cacheColorHint">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:listSelector">@drawable/selectable_background</item>
+    </style>
+
+    <style name="Button.SportsWorld" parent="android:style/Widget.Button">
+        <item name="android:background">@color/morado</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="EditText.SportsWorld" parent="android:style/Widget.EditText">
+        <item name="android:background">@drawable/edit_text_sports_world</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="MainBoardButton">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="MainBoardButtonBlock">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:clickable">false</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="MemeberProfileTableStyle">
+        <item name="android:layout_marginBottom">@dimen/common_minimum_vertical_separation</item>
+        <item name="android:layout_marginLeft">@dimen/common_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/common_horizontal_margin</item>
+        <item name="android:background">@android:drawable/btn_default</item>
+        <item name="android:shrinkColumns">true</item>
+        <item name="android:stretchColumns">true</item>
+    </style>
+
+    <style name="TextView.ProfileTitleStripText" parent="android:Widget.TextView">
+        <item name="android:color">@android:color/white</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- Profile -->
+    <style name="TextView.ProfileKey" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextView_StaticValues_Profile" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextView_ChangeValues_Profile" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="TextView_Profile_Value" parent="android:Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:freezesText">true</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextView.ProfileValue" parent="android:Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:freezesText">true</item>
+    </style>
+
+    <style name="TextView.ProfileValue.Clickable">
+        <item name="android:background">@drawable/selectable_background</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="SeparatorStyle" />
+
+    <style name="SeparatorStyle.Vertical">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="SeparatorStyle.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="SeparatorStyle.Horizontal.Black">
+        <item name="android:background">@android:color/black</item>
+    </style>
+
+    <style name="SeparatorStyle.Vertical.Black">
+        <item name="android:background">@android:color/black</item>
+    </style>
+
+    <style name="ProfileTitleStripStyle">
+        <item name="android:background">@color/pressed</item>
+        <item name="android:layout_marginBottom">@dimen/common_minimum_vertical_separation</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ProfileTitleStripImageStyle">
+        <item name="android:contentDescription">@null</item>
+        <item name="android:paddingRight">@dimen/common_minimum_vertical_separation</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="TextView.FinancialInfo" parent="android:Widget.TextView">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Button.Policies" parent="android:style/Widget.Button">
+        <item name="android:background">@drawable/btn_policies</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Button.BranchOverviewActions" parent="android:style/Widget.Button">
+        <item name="android:background">@drawable/selectable_background</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:enabled">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="CheckBox.SportsWorld" parent="android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/btn_check_sports_world</item>
+    </style>
+
+    <style name="TextView.IndicationStrip" parent="android:Widget.TextView">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/sports_world_yellow</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="NumberPickerInputText" parent="android:TextAppearance.Large.Inverse">
+        <item name="android:textColor">@android:color/primary_text_light</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="ListBranchClubs">
+        <item name="android:textColor">#E6E6E6</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Loyal_header_text">
+        <item name="android:textColor">@color/loyal_table_header</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="txt_award_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="txt_award_items">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="txt_catalog_box">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">right</item>
+        <item name="android:background">@color/gray</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

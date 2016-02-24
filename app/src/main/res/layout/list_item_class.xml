@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+
+		<!--  android:background="@color/sports_world_yellow"-->
+    <TextView
+        android:id="@+id/txt_starts_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/darkest_gray"
+        android:textStyle="bold"
+        android:text="start"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imageView7"
+        android:layout_toEndOf="@+id/imageView7"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/txt_coach_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@android:color/black"
+        android:text="Coatch"
+        android:gravity="center"
+        android:drawableLeft="@drawable/icono_bandera"
+        android:layout_alignBottom="@+id/imageView7"
+        android:layout_toRightOf="@+id/txt_starts_at"
+        android:layout_toEndOf="@+id/txt_starts_at"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/txt_class_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@android:color/black"
+        android:text="Name"
+        android:layout_above="@+id/txt_coach_name"
+        android:layout_alignLeft="@+id/txt_coach_name"
+        android:layout_alignStart="@+id/txt_coach_name"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView7"
+        android:background="@drawable/icono_cronometro"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView8"
+        android:background="@drawable/angle_gris"
+        android:layout_alignTop="@+id/txt_starts_at"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+ </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/textView14"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="#fffd9d01" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="branch_types">
+        <item>@string/type_favorite</item>
+        <item>@string/type_coming_soon</item>
+        <item>@string/type_df</item>
+        <item>@string/type_province</item>
+    </string-array>
+    
+    <string-array name="gender_arrays">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
+</resources>

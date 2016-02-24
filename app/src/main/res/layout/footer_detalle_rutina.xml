@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:text="Recomendaciones"
+        android:background="#ff4f015d"/>
+	
+    <LinearLayout 
+        android:id="@+id/textoNutricion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abs__list_selector_holo_dark"
+        android:clickable="true"
+        android:focusable="true">
+        
+        <TextView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="45dp"
+	        android:textColor="@color/black"
+	        android:textSize="13sp"
+	        android:textStyle="bold"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:gravity="center_vertical"
+	        android:text="Nutrición"/>
+        
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="internal_empty" type="id"/>
+    <item name="internal_progress_container" type="id"/>
+    <item name="internal_list_container" type="id"/>
+    <item name="internal_web_view" type="id"/>
+    <item name="internal_reload" type="id"/>
+    <item name="internal_expandable_list" type="id"/>
+
+</resources>

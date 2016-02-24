@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActionBar.Solid.SportsWorld" parent="@style/Widget.Sherlock.Light.ActionBar.Solid">
+        <item name="android:background">@color/morado</item>
+    </style>
+</resources>

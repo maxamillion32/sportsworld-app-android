@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mx.com.sportsworld.sw">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+    android:versionCode="8"
+    android:versionName="1.0.0" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="mx.com.sportsworld.sw.app.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="mx.com.sportsworld.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="mx.com.sportsworld.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icono_upster"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/Theme.SportsWorld">
+        <activity
+            android:name=".activity.PoliciesActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ViewPagerActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".activity.MainboardActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".activity.TourActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MemberProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.GuestProfileActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewsListActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CatalogActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BranchTypesListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewsContentActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SportsWorldMainActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BranchOverviewActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.InstalacionesActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ClasesActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".BuscarClasesActivity" />
+        </activity>
+        <activity
+            android:name=".activity.LoyaltyActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BuscarClasesActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".activity.SpecificBranchTypeListActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FacilitiesActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.BranchLocationActivity" />
+        <activity
+            android:name=".activity.GymClassesActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.GymCalendarActivity" />
+        <activity
+            android:name=".activity.RoutineSelectorActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RoutineActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AwardActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NutritionAdviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ExerciseInstructionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DummyActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SocialNetworksActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="t4jsample"
+                    android:scheme="oauth" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RouteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WebActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:parentActivityName=".account.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".account.LoginActivity" />
+        </activity>
+
+        <provider
+            android:name=".provider.SportsWorldProvider"
+            android:authorities="mx.com.sportsworld.sw.provider"
+            android:exported="false" />
+        <!--
+            <provider android:authorities="com.facebook.app.NativeAppCallContentProvider1480984865552273"
+                  android:name="com.facebook.NativeAppCallContentProvider"
+                  android:exported="true"/>
+        -->
+
+        <service
+            android:name=".service.FetchBranchService"
+            android:exported="false" />
+        <service
+            android:name=".service.GetBranchOverviewService"
+            android:exported="false" />
+        <service
+            android:name=".service.MarkBranchAsFavoriteService"
+            android:exported="false" />
+        <service
+            android:name=".service.MemberProfileUpdateService"
+            android:exported="false" />
+        <service
+            android:name=".service.FetchBranchGymClassesService"
+            android:exported="false" />
+        <service
+            android:name=".service.BookGymClassService"
+            android:exported="false" />
+        <service
+            android:name=".service.GetRoutineService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDgw1PGZauv1ohCPy6Y808dEd8njHzpSBA" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".account.CreateUserActivity" />
+        <activity android:name=".account.RestoreUserActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:padding="8dp"
+                android:layout_height="wrap_content">
+
+    <LinearLayout android:layout_width="64dp"
+                  android:layout_height="64dp"
+                  android:background="#ffcc0000"
+                  android:orientation="vertical"
+                  android:id="@+id/horario"
+                  android:layout_alignParentLeft="true">
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="0.3"
+                  android:textColor="#FFFFFF"
+                  android:background="#ffaa0000"
+                  android:gravity="center"
+                  android:id="@+id/fecha"
+                  android:text="15 FEB"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="0.3"
+                  android:textColor="#FFFFFF"
+                  android:gravity="center"
+                  android:id="@+id/inicio"
+                  android:text="9:00AM"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:gravity="center"
+                  android:layout_weight="0.3"
+                  android:id="@+id/fin"
+                  android:textColor="#FFFFFF"
+                  android:text="9:00AM"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:layout_marginLeft="8dp"
+                  android:layout_toRightOf="@+id/horario">
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="0.3"
+                  android:id="@+id/nombre_clase"
+                  android:textStyle="bold"
+                  android:textSize="18sp"
+                  android:text="Clase"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="0.3"
+                  android:id="@+id/instructor"
+                  android:fontFamily="sans-serif-light"
+
+                  android:text="Instructor"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="0.3"
+                  android:fontFamily="sans-serif-light"
+
+                  android:id="@+id/salon"
+                  android:text="Salón"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

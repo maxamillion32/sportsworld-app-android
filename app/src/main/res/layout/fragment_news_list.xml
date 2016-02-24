@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/rlt_financial_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_register"
+        android:padding="@dimen/common_minimum_vertical_margin" >
+
+        <TextView
+            android:id="@+id/txt_financial_info_title"
+            style="@style/TextView.FinancialInfo"
+            android:layout_width="wrap_content" android:textAppearance="?android:textAppearanceSmall"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/financial_info_title" />
+
+        <View
+            android:id="@+id/separator"
+            style="@style/SeparatorStyle.Vertical"
+            android:layout_marginLeft="@dimen/common_minimum_vertical_separation"
+            android:layout_marginRight="@dimen/common_minimum_vertical_separation"
+            android:background="@android:color/white" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/lnr_financial_info_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/TextView.FinancialInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bussiness_name" />
+
+                <TextSwitcher
+                    android:id="@+id/txt_financial_info_last_trade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inAnimation="@android:anim/fade_in"
+                    android:outAnimation="@android:anim/fade_out" >
+
+                    <TextView
+                        style="@style/TextView.FinancialInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/TextView.FinancialInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold" />
+                </TextSwitcher>
+
+                <TextSwitcher
+                    android:id="@+id/txt_financial_info_change_and_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inAnimation="@android:anim/fade_in"
+                    android:outAnimation="@android:anim/fade_out" >
+
+                    <TextView
+                        style="@style/TextView.FinancialInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/TextView.FinancialInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/common_minimum_vertical_separation"
+                        android:textStyle="bold" />
+                </TextSwitcher>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_retry_fetch_financial_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/retry"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rlt_financial_info"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@id/internal_progress_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textIsSelectable="false" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@id/internal_list_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawSelectorOnTop="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@id/internal_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/common_minimum_vertical_separation"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textIsSelectable="false" />
+
+                <Button
+                    android:id="@+id/btn_retry_news_fetch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/retry"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+</RelativeLayout>

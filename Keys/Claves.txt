@@ -1,0 +1,21 @@
+Key store password:
+sportsworld
+
+Key Alias:
+SportsWorld
+
+Key password:
+sportsworld
+
+Clave Sha1 del keystore:
+48:7F:3D:22:AC:17:77:82:34:41:99:B2:87:D1:AC:BA:7E:1C:F7:42
+
+Hash del keystore:
+SH89IqwXd4I0QZmyh9Gsun4c90I=
+
+API Google Maps:
+------AIzaSyDb4k6HSz-spXkMhG4hwrCYSDEJmI_1Ato---- Anterior (ya no sirve)
+AIzaSyDgw1PGZauv1ohCPy6Y808dEd8njHzpSBA
+
+Facebook AppId:
+1480984865552273

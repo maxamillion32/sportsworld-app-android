@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="orange">#ff8a179b</color>
+    <color name="sports_world_red">#ff8a179b</color>
+    <color name="sports_world_yellow">#ff8a179b</color>
+    <color name="pressed">@color/grayy</color>
+    <color name="darkest_gray">#2c2c2c</color>
+    <color name="transparent_black">#7f000000</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff8a179b</color>
+    <color name="gray">#C0C0C0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grayy">#B6B8BA</color>
+    <color name="transparente">#00000000</color>
+    <color name="blue_face">#324F85</color>
+    <color name="row_even">#c2c2c2</color>
+    <color name="row_odd">#eeeeee</color>
+    <color name="loyal_gray_text">#333333</color>
+    <color name="loyal_white_points">#FFFFFF</color>
+    <color name="loyal_table_header">#666666</color>
+    <color name="loyal_row_one">#e7e7e7</color>
+    <color name="loyal_row_two">#b3b3b3</color>
+    <color name="award_row_two">#5d5d5d</color>
+    <color name="morado_toast">#ff9616ba</color>
+    <color name="morado">#ff8a179b</color>
+    <color name="scroll">#ffc75dff</color>
+</resources>

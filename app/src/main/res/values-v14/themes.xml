@@ -1,0 +1,21 @@
+<resources>
+
+    <style name="Theme.SportsWorld" parent="Theme.Shared">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.SportsWorld</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.SportsWorld</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.SportsWorld</item>
+    </style>
+
+    <style name="Theme.SportsWorld.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.SportsWorld.SplashScreen">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="#fffdcd01"
+    android:paddingBottom="@dimen/common_minimum_horizontal_margin"
+    android:paddingLeft="@dimen/common_minimum_vertical_margin"
+    android:paddingRight="@dimen/common_minimum_vertical_margin"
+    android:paddingTop="@dimen/common_minimum_horizontal_margin" >
+
+
+    <TextView
+        android:id="@+id/txt_branch_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="Club"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/txt_schedule"
+        android:layout_alignLeft="@+id/txt_schedule"
+        android:layout_alignStart="@+id/txt_schedule" />
+
+
+    <TextView
+        android:id="@+id/txt_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="Hora"
+        android:layout_above="@+id/txt_sala"
+        android:layout_alignLeft="@+id/txt_sala"
+        android:layout_alignStart="@+id/txt_sala" />
+
+    <Button
+        android:id="@+id/btn_book"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="@string/book"
+        android:layout_below="@+id/txt_branch_name"
+        android:layout_alignRight="@+id/chc_notify_club"
+        android:layout_alignEnd="@+id/chc_notify_club" />
+
+    <!--
+        <TextView
+        android:id="@+id/txt_confirmation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separator"
+        android:layout_marginBottom="@dimen/common_minimum_vertical_separation"
+        android:text="@string/confirmation"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@android:color/darker_gray" />
+    -->
+
+    <TextView
+        android:id="@+id/txt_sala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sala"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/imageView9"
+        android:layout_toRightOf="@+id/imageView9"
+        android:layout_toEndOf="@+id/imageView9" />
+
+    <CheckBox
+        android:id="@+id/chc_notify_club"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@+id/txt_branch_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/txt_notify_branch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/notify_branch"
+        android:textColor="@android:color/darker_gray"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView9"
+        android:background="@drawable/icono_ubiacion_blanco"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

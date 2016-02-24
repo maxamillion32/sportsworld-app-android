@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_redes">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:id="@+id/cab"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#ff790268">
+
+            <Button
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:id="@+id/lblTitulo1"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Redes Sociales"
+                android:drawableLeft="@drawable/icono_redes_sociales"
+                android:background="@color/transparente"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/common_minimum_vertical_separation"
+            android:gravity="center"
+            android:text="@string/social_top"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:id="@+id/lblTitulo"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp" />
+
+        <com.facebook.widget.LoginButton
+            android:id="@+id/btn_facebook_connect"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/boton_conectar"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_like"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/boton_like"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_twitter_log_in"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/common_minimum_vertical_separation"
+            android:background="@drawable/btn_twitter_login"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_follow"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_twitter_follow" />
+    </LinearLayout>
+
+</ScrollView>

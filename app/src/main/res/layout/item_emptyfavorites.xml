@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:clickable="false"
+    android:focusable="false" >
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="100dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/error_no_favorite_club1"
+            android:layout_gravity="bottom"
+            android:textColor="@color/white"
+            android:layout_marginRight="5dp"/>
+        
+        <ImageView 
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/btn_toggle_on_normal_favorite"/>
+        
+    </LinearLayout>
+	
+    <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/error_no_favorite_club2"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="100dp"/>
+    
+</LinearLayout>

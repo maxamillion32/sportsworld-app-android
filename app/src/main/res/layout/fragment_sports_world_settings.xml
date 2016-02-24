@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_sett" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:contentDescription="@string/app_name"
+            android:paddingBottom="10dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:src="@drawable/logo_upster"
+            android:id="@+id/imageView4" />
+
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView5"
+            android:background="@drawable/barra_slide_izquierda"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+            android:id="@+id/btn_edit_profile"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selectable_background"
+            android:textColor="#ff000000"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/icono_perfil"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/profile"
+            android:layout_below="@+id/imageView4"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btn_enable_social_networks"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selectable_background"
+            android:textColor="#ff000000"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/iconos_redes"
+
+            android:layout_gravity="center_horizontal"
+            android:text="@string/social_networks"
+            android:layout_below="@+id/btn_edit_profile"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btn_logOut_profile"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selectable_background"
+            android:textColor="#ff000000"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/icono_cerrar"
+
+            android:layout_gravity="center_horizontal"
+            android:text="@string/logout_profile"
+            android:layout_below="@+id/btn_enable_social_networks"
+            android:layout_alignStart="@+id/btn_edit_profile"
+            android:layout_alignLeft="@+id/btn_edit_profile"/>
+
+        <Button
+            android:id="@+id/btn_ayuda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/settings_help"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/btn_enable_social_networks"
+            android:layout_alignStart="@+id/btn_enable_social_networks"
+            android:layout_marginBottom="53dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

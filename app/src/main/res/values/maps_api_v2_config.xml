@@ -1,0 +1,9 @@
+	<resources>
+    <string name="maps_v2_api_key" translatable="false">@string/maps_v2_api_key_develop</string>
+    <string name="maps_v2_api_key_develop" translatable="false">AIzaSyAiAFl4oL685OVudncsvVzn0VpRzsff9IY</string>
+        <!--AIzaSyD93-5ehwWNdSXxlMqAV_4Il9zsZWl7p38   AIzaSyBMwH0UAWKt-Eo_ReW6vkXPc5jLRS7j2ts
+        prod AIzaSyAiAFl4oL685OVudncsvVzn0VpRzsff9IY
+        deb AIzaSyBMwH0UAWKt-Eo_ReW6vkXPc5jLRS7j2ts
+        -->
+    <string name="maps_v2_api_key_production" translatable="false">AIzaSyAiAFl4oL685OVudncsvVzn0VpRzsff9IY</string>
+</resources>

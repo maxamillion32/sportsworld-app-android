@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="common_horizontal_margin">16dp</dimen>
+    <dimen name="common_vertical_margin">16dp</dimen>
+    <dimen name="common_horizontal_padding">@dimen/common_horizontal_margin</dimen>
+    <dimen name="common_vertical_padding">@dimen/common_vertical_margin</dimen>
+    <dimen name="news_image_thumb_size">128dp</dimen>
+    <dimen name="branch_image_height">128dp</dimen>
+    <dimen name="catalog_item_image_height">70dp</dimen>
+    <dimen name="indication_strip_padding">4dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="common_minimum_horizontal_margin">5dp</dimen>
+    <dimen name="common_minimum_vertical_margin">5dp</dimen>
+    <dimen name="common_minimum_vertical_separation">5dp</dimen>
+    <dimen name="common_minimum_horizontal_separation">8dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="AnchoObjetos">300dp</dimen>
+    <dimen name="LargoObjetos">40dp</dimen>
+    <dimen name="MargenAlto">10dp</dimen>
+
+</resources>

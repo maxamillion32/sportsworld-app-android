@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/common_vertical_padding" >
+
+    <ImageView
+        android:id="@+id/mgv_news_image"
+        android:layout_width="@dimen/news_image_thumb_size"
+        android:layout_height="@dimen/news_image_thumb_size"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/common_minimum_vertical_separation"
+        android:contentDescription="@null"
+        android:src="@drawable/empty_photo" />
+
+     <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/common_minimum_vertical_separation"
+        android:layout_toRightOf="@id/mgv_news_image"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold" 
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/txt_resume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txt_title"
+        android:layout_toRightOf="@id/mgv_news_image"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#000000" />
+</RelativeLayout>
