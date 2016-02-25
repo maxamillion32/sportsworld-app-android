@@ -6,12 +6,8 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.Toast;
 
-import com.facebook.Response;
 import com.facebook.Session;
-
-import org.apache.http.params.HttpParams;
 
 import java.security.NoSuchAlgorithmException;
 
@@ -26,9 +22,9 @@ import mx.com.sportsworld.sw.provider.SportsWorldContract;
 import mx.com.sportsworld.sw.web.HttpPostClient;
 
 /**
- * Created by Qualtop on 24/02/2016.
+ * Created by Qualtop on 25/02/2016.
  */
-public class CreateUserTask extends AsyncTask <UserPojo, Void, UserPojo> {
+public class RestoreUserTask extends AsyncTask <UserPojo, Void, UserPojo> {
 
     JsonParser parser = null;
 
@@ -37,51 +33,45 @@ public class CreateUserTask extends AsyncTask <UserPojo, Void, UserPojo> {
     public static Context mContext;
 
     HttpPostClient post = null;
-    
+
     UserPojo pojo = null;
-    
+
     UserProfileJson jsonParse = null;
 
-    private String mCurrentUserID;
-
-    public CreateUserTask(ResponseInterface responseInterface) {
-
+    public RestoreUserTask(ResponseInterface anInterface) {
     }
 
     @Override
     protected UserPojo doInBackground(UserPojo... params) {
         parser = new JsonParser();
 
-        if (clearData)
-            logOut();
+        if(clearData)logoOut();
 
-        for(UserPojo datos : params){
+        for(UserPojo datos: params){
             String value = cifrarPass(datos);
-            post = new HttpPostClient(Resource.URL_API_BASE + "/login_upster/");  ///metodo nuevo para la generacion de Usuario.
+            post = new HttpPostClient(Resource.URL_API_BASE + "/login/"); // Nuevo metodo para recuperar contraseña
             datos.setJson(post.postExecute(value));
-            
+
             if(datos.getJson().equals("TimeOut")){
                 pojo = new UserPojo();
                 pojo.setStatus(false);
                 pojo.setMessage("TimeOut");
                 break;
             }
-            
+
             pojo = parser.parseJson(datos);
-            
             if(!pojo.isStatus())break;
-            
+
             jsonParse = new UserProfileJson(pojo.getData());
-            
+
             datos = jsonParse.parse();
-            
+
             String userID = createMember(datos);
-            
+
             setCurrentUserID(userID);
-            
+
+
         }
-        
-        
 
         return null;
     }
@@ -136,11 +126,10 @@ public class CreateUserTask extends AsyncTask <UserPojo, Void, UserPojo> {
         } catch (NoSuchAlgorithmException e) {
 
         }
-
         return authKey;
     }
 
-    private void logOut() {
+    private void logoOut() {
         Session session = Session.getActiveSession();
         if ((session != null) && session.isOpened()) {
             session.closeAndClearTokenInformation();
@@ -154,12 +143,7 @@ public class CreateUserTask extends AsyncTask <UserPojo, Void, UserPojo> {
         SportsWorldPreferences.clearAllPreferences(context);
     }
 
-
     public void setCurrentUserID(String userId) {
         SportsWorldPreferences.setCurrentUserId(mContext, userId);
-    }
-
-    public String getCurrentUserID() {
-        return mCurrentUserID;
     }
 }

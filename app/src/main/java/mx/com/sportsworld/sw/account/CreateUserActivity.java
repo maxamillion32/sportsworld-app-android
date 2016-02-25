@@ -87,6 +87,9 @@ public class CreateUserActivity extends Activity implements View.OnClickListener
             }
         });
 
+        CreateUserTask.mContext = this;
+        mCreateUserTask.execute(pojo);
+
         Toast.makeText(getApplicationContext(), "carga cuenta" + " ", Toast.LENGTH_LONG).show();
     }
 
