@@ -74,6 +74,8 @@
         android:layout_height="@dimen/LargoObjetos"
         android:id="@+id/txtUsuario"
         android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:maxLength="10"
         android:hint="Usuario"/>
 
     <EditText

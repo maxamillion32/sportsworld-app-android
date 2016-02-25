@@ -43,10 +43,6 @@ public class RestoreUserActivity extends Activity implements View.OnClickListene
     }
 
     private void loadRestauraCuenta() {
-        UserParams mUserParams = new UserParams();
-        mUserParams.setIdClub(ddlClub.getSelectedItemId());
-        mUserParams.setIdMember(Integer.parseInt(txtNumMembresia.getText().toString()));
-        mUserParams.setCorreoE(txtCorreoE.getText().toString());
-        Toast.makeText(getApplicationContext(), "Actualiza passw " + mUserParams.getIdClub(), Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "Actualiza passw ", Toast.LENGTH_LONG).show();
     }
 }

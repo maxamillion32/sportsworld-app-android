@@ -8,6 +8,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 import mx.com.sportsworld.sw.R;
+import mx.com.sportsworld.sw.activity.events.ResponseInterface;
+import mx.com.sportsworld.sw.pojo.UserPojo;
+import mx.com.sportsworld.sw.web.task.CreateUserTask;
 
 public class CreateUserActivity extends Activity implements View.OnClickListener {
 
@@ -31,7 +34,7 @@ public class CreateUserActivity extends Activity implements View.OnClickListener
 
     private EditText txtConfPassw;
 
-    private UserParams mUserParams;
+    private CreateUserTask mCreateUserTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,27 +67,27 @@ public class CreateUserActivity extends Activity implements View.OnClickListener
 
     private void loadCrearCuenta() {
 
-        UserParams mUserParams = new UserParams();
+        UserPojo pojo = new UserPojo();
+        pojo.setmIdClub((int) ddlIdClub.getSelectedItemId());
+        pojo.setmMemberType(String.valueOf(ddlTipoMember.getSelectedItemId()));
+        pojo.setmMemberNumber(Integer.parseInt(txtNumMembresia.getText().toString()));
+        pojo.setNumeroIntegrantes(Integer.parseInt(txtNumIntegrantes.getText().toString()));
+        pojo.setmEmail(txtCorreoE.getText().toString());
+        pojo.setEmailConfirm(txtConfCorreoE.getText().toString());
+        pojo.setUsername(txtUsuario.getText().toString());
+        pojo.setPassword(txtPassw.getText().toString());
+        pojo.setPasswordConfirm(txtConfPassw.getText().toString());
 
-        mUserParams.setIdClub(ddlIdClub.getSelectedItemId());
+        mCreateUserTask = new CreateUserTask(new ResponseInterface(){
 
-        mUserParams.setTipoMember(ddlTipoMember.getSelectedItemId());
+            @Override
+            public void onResultResponse(Object obj) {
+                UserPojo userPojo = (UserPojo) obj;
+                //showOnLoggingProgressBar(false, true);
+            }
+        });
 
-        mUserParams.setIdMember(Integer.parseInt(txtNumMembresia.getText().toString()));
-
-        mUserParams.setNumIntegrantes(Integer.parseInt(txtNumIntegrantes.getText().toString()));
-
-        mUserParams.setCorreoE(txtCorreoE.getText().toString());
-
-        mUserParams.setConfCorreoE(txtConfCorreoE.getText().toString());
-
-        mUserParams.setUsuario(txtUsuario.getText().toString());
-
-        mUserParams.setPassw(txtPassw.getText().toString());
-
-        mUserParams.setConfPassw(txtConfPassw.getText().toString());
-
-        Toast.makeText(getApplicationContext(), "carga cuenta" + " " + mUserParams.getIdMember() + " " + mUserParams.getNumIntegrantes(), Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "carga cuenta" + " ", Toast.LENGTH_LONG).show();
     }
 
     @Override

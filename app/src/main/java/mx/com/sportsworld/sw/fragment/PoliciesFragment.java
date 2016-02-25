@@ -27,6 +27,7 @@ import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.CompoundButton;
 
 import com.actionbarsherlock.app.SherlockFragment;
@@ -78,6 +79,8 @@ public class PoliciesFragment extends SherlockFragment implements
 
 	/** The m btn continue. */
 	private Button mBtnContinue;
+
+	private CheckBox chkPolicies;
 
 	/** The m btn try again. */
 	private Button mBtnTryAgain;
@@ -170,6 +173,9 @@ public class PoliciesFragment extends SherlockFragment implements
 	 * android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater,
 	 * android.view.ViewGroup, android.os.Bundle)
 	 */
+
+
+
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
@@ -182,10 +188,14 @@ public class PoliciesFragment extends SherlockFragment implements
 		//mBtnTakeTour = (Button) view.findViewById(R.id.btn_take_tour);
 		mBtnContinue = (Button) view.findViewById(R.id.btn_continue);
 		//getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE
+
+		chkPolicies = (CheckBox) view.findViewById(R.id.chc_aggre);
+
 		if (getOnlyShowPoliciesFromArgs()) {
 			mLnrOptions.setVisibility(View.GONE);
 		} else {
 			//mChcAgree.setOnCheckedChangeListener(this);
+			chkPolicies.setOnCheckedChangeListener(this);
 			//mBtnTakeTour.setOnClickListener(this);
 			mBtnContinue.setOnClickListener(this);
 		}

@@ -24,12 +24,27 @@
             android:paddingRight="8dp"
             android:gravity="right"
             android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/agreement"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/orange" />
+
+            <CheckBox
+                android:id="@+id/chc_aggre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_minimum_vertical_separation"/>
+
             <Button
                 android:id="@+id/btn_continue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/agree_and_continue"
-                android:visibility="visible"
+                android:visibility="invisible"
                 android:textColor="#ff77067e"
                 android:drawableLeft="@drawable/icono_continuar"
                 android:gravity="left|center_vertical"

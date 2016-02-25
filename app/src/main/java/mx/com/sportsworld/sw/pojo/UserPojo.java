@@ -29,6 +29,13 @@ public class UserPojo extends MainPojo {
 	long mMemUniqId;
 	String secret_key;
 
+	/*	Nuevos Parametros	*/
+
+	private int mNumeroIntegrantes;
+	private String mEmailConfirm;
+	private String mPasswordConfirm;
+
+
 	public String getSecret_key() {
 		return secret_key;
 	}
@@ -205,4 +212,27 @@ public class UserPojo extends MainPojo {
 		this.mRegisterDate = mRegisterDate;
 	}
 
+	public int getNumeroIntegrantes() {
+		return mNumeroIntegrantes;
+	}
+
+	public void setNumeroIntegrantes(int numeroIntegrantes) {
+		mNumeroIntegrantes = numeroIntegrantes;
+	}
+
+	public String getEmailConfirm() {
+		return mEmailConfirm;
+	}
+
+	public void setEmailConfirm(String emailConfirm) {
+		mEmailConfirm = emailConfirm;
+	}
+
+	public String getPasswordConfirm() {
+		return mPasswordConfirm;
+	}
+
+	public void setPasswordConfirm(String passwordConfirm) {
+		mPasswordConfirm = passwordConfirm;
+	}
 }

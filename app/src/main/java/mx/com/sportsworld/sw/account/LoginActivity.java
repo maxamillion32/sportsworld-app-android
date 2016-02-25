@@ -195,6 +195,7 @@ public class LoginActivity extends SherlockFragmentActivity implements
 
 		mMemberLogInInProgress = savedInstanceState
 				.getBoolean(STATE_MEMBER_LOG_IN_IN_PROGRESS);
+
 		mGuestLogInInProgress = savedInstanceState
 				.getBoolean(STATE_GUEST_LOG_IN_IN_PROGRESS);
 
@@ -490,6 +491,7 @@ public class LoginActivity extends SherlockFragmentActivity implements
 			}
 
 			showOnLoggingProgressBar(true, true);
+
 			loginTask = new LoginTask(new ResponseInterface() {
 
 				@Override
