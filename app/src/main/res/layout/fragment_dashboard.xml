@@ -37,7 +37,7 @@
             android:layout_height="100dp"
             android:layout_centerHorizontal="true"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:drawableTop="@drawable/icn_clubes_off"
+            android:drawableTop="@drawable/pantalla1_icono_clubes"
             android:background="@drawable/selectable_background"
             android:layout_alignBottom="@+id/textView13"
             android:layout_toLeftOf="@+id/textView13"
@@ -51,7 +51,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#ff000000"
             android:textStyle="bold"
-            android:drawableTop="@drawable/icn_clases_off"
+            android:drawableTop="@drawable/pantalla1_icono_clases"
             android:textSize="30dp"
             android:layout_weight="0.33"
             android:layout_below="@+id/mgb_go_to_clubs"
@@ -62,7 +62,7 @@
                 android:id = "@+id/btn_rutinas"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:drawableTop="@drawable/icn_rutinas_off"
+                android:drawableTop="@drawable/pantalla1_icono_rutinas"
                 android:textSize="30dp"
                 android:layout_weight = ".033"
                 android:background="@drawable/selectable_background"
@@ -72,7 +72,7 @@
 
         <Button
             android:id = "@+id/btn_noticias"
-            android:drawableTop="@drawable/icn_noticias_off"
+            android:drawableTop="@drawable/pantalla1_icono_noticias"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/selectable_background"
@@ -89,7 +89,6 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#ff000000"
             android:textStyle="bold"
-            android:drawableTop="@drawable/que_es_upster"
             android:textSize="30dp"
             android:layout_weight="0.33"
             android:layout_below="@+id/btn_rutinas"
@@ -107,10 +106,10 @@
             android:layout_centerHorizontal="true"/>
 
         <ImageView
-            android:layout_width="25dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView5"
-            android:background="@drawable/barra_slide_derecho"
+            android:background="@drawable/pantalla30_icono_menu"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true" />
 

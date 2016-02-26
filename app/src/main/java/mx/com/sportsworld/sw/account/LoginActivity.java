@@ -180,14 +180,14 @@ public class LoginActivity extends SherlockFragmentActivity implements
 		TextView lblText = (TextView) findViewById(R.id.lblTitulo);
 		TextView textView = (TextView) findViewById(R.id.textView);
 		TextView textView7 = (TextView) findViewById(R.id.textView7);
-		TextView txtRecordatorio = (TextView) findViewById(R.id.txtRecordatorio);
+		//TextView txtRecordatorio = (TextView) findViewById(R.id.txtRecordatorio);
 		lblText.setTypeface(font);
 		textView.setTypeface(font);
 		textView7.setTypeface(font);
 		//btnRememberMyPassword.setTypeface(font);
 		btnLogIn.setTypeface(font);
 		btnRegister.setTypeface(font);
-		txtRecordatorio.setTypeface(font);
+		//txtRecordatorio.setTypeface(font);
 		mDttUsername.setTypeface(font);
 		if (savedInstanceState == null) {
 			return;

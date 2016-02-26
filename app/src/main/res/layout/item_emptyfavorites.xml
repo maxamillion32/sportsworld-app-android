@@ -27,7 +27,7 @@
         <ImageView 
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:src="@drawable/btn_toggle_on_normal_favorite"/>
+            android:src="@drawable/pantalla10_icono_favoritos_chico"/>
         
     </LinearLayout>
 	

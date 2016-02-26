@@ -15,9 +15,9 @@
 -->
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_window_focused="false" android:state_enabled="true" android:drawable="@drawable/textfield_default_sports_world" />
+    <item android:state_window_focused="false" android:state_enabled="true" android:drawable="@drawable/textfield_activated_sports_world" />
     <item android:state_enabled="true" android:state_focused="true" android:drawable="@drawable/textfield_activated_sports_world" />
-    <iten android:state_enabled="true" android:state_activated="true" android:drawable="@drawable/textfield_focused_sports_world" />
-    <item android:state_enabled="true" android:drawable="@drawable/textfield_default_sports_world" />
+    <iten android:state_enabled="true" android:state_activated="true" android:drawable="@drawable/textfield_activated_sports_world" />
+    <item android:state_enabled="true" android:drawable="@drawable/textfield_activated_sports_world" />
 </selector>
 

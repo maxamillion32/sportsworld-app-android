@@ -29,7 +29,7 @@
                     android:id="@+id/tgg_favorite"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:background="@drawable/icono_club_amores"
+                    android:background="@drawable/pantalla25_icono_semana"
                     android:textOff="@null"
                     android:textOn="@null"
                     android:visibility="visible"
@@ -90,7 +90,7 @@
                     android:layout_height="70dp"
                     android:layout_alignBottom="@+id/pager"
                     android:layout_alignRight="@+id/pager"
-                    android:drawableTop="@drawable/icono_movil"
+                    android:drawableTop="@drawable/pantalla25_fondo_llamar"
                     android:scaleType="fitXY"
                     android:background="#b44f015d" />
             </RelativeLayout>
@@ -120,7 +120,7 @@
                         android:gravity="left"
                         android:paddingLeft="40dp"
                         android:paddingRight="50dp"
-                        android:drawableRight="@drawable/angle_gris"
+                        android:drawableRight="@drawable/pantalla25_angle"
                         android:drawablePadding="30dp"
                         android:textStyle="bold"
                         android:textSize="20dp"
@@ -150,7 +150,7 @@
                         android:gravity="left"
                         android:paddingLeft="40dp"
                         android:paddingRight="50dp"
-                        android:drawableRight="@drawable/angle_gris"
+                        android:drawableRight="@drawable/pantalla25_angle"
                         android:drawablePadding="30dp"
                         android:textStyle="bold"
                         android:textSize="20dp"
@@ -181,7 +181,7 @@
                         android:gravity="left"
                         android:paddingLeft="40dp"
                         android:paddingRight="50dp"
-                        android:drawableRight="@drawable/angle_gris"
+                        android:drawableRight="@drawable/pantalla25_angle"
                         android:drawablePadding="30dp"
                         android:textStyle="bold"
                         android:textSize="20dp" />
@@ -194,7 +194,7 @@
                 android:layout_height="50dp"
                 android:text="@string/show_location"
                 android:layout_gravity="center_horizontal"
-                android:background="@drawable/boton_verubicacion" />
+                android:background="@drawable/pantalla25_btn_rutina" />
         </LinearLayout>
         
     </RelativeLayout>

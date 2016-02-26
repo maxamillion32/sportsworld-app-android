@@ -3,14 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/back">
+    android:background="@drawable/pantalla1_textura_fondo">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></LinearLayout>
 
     <LinearLayout
         android:id="@+id/lnr_options"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/transparente"
+        android:background="@drawable/pantalla9_footer"
         android:orientation="vertical"
         android:paddingBottom="8dp"
         android:paddingLeft="@dimen/common_minimum_horizontal_margin"
@@ -29,6 +33,7 @@
                 android:id="@+id/chc_aggre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@color/white"
                 android:layout_marginLeft="@dimen/common_minimum_vertical_separation"/>
 
             <TextView
@@ -36,8 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/agreement"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="@color/orange" />
+                android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/btn_continue"
@@ -46,7 +50,7 @@
                 android:text="@string/agree_and_continue"
                 android:visibility="invisible"
                 android:textColor="#ff77067e"
-                android:drawableLeft="@drawable/icono_continuar"
+                android:drawableLeft="@drawable/pantalla9_btn_continuar"
                 android:gravity="left|center_vertical"
                 android:background="@color/transparente"
                 android:layout_weight="0.10" />
@@ -77,7 +81,8 @@
             android:id="@+id/wbv_policies"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:drawSelectorOnTop="false" />
+            android:drawSelectorOnTop="false"
+            android:background="@drawable/pantalla1_textura_fondo"/>
 
         <RelativeLayout
             android:id="@+id/rlt_on_error_container"
@@ -104,6 +109,7 @@
                 android:layout_centerHorizontal="true"
                 android:text="@string/retry" />
         </RelativeLayout>
+
     </FrameLayout>
 
 </RelativeLayout>

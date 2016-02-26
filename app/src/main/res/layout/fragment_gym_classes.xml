@@ -81,7 +81,7 @@
             android:id="@id/internal_list_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/back">
+            android:background="@drawable/pantalla1_textura_fondo">
 
             <ExpandableListView
                 android:id="@id/internal_expandable_list"

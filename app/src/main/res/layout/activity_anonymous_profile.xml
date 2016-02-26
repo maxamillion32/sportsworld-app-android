@@ -3,7 +3,7 @@
     xmlns:facebook="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back_amarillo">
+    android:background="@drawable/pantalla15_textura_fondo">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,8 +31,7 @@
             android:layout_gravity="center"
             android:text="@string/save_profile"
             android:textStyle="bold"
-            android:background="#ff8a179b"
-            android:textColor="@color/white" />
+            android:background="@drawable/pantalla15_btn_finalizar"/>
     </LinearLayout>
 
 </ScrollView>

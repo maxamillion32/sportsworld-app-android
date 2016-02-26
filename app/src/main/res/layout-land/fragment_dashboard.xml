@@ -2,14 +2,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-                android:background="@drawable/back_amarillo">
+                android:background="@drawable/pantalla1_textura_fondo">
 
      <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/scrollView"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentBottom="true">
 
 
     <RelativeLayout
@@ -24,9 +23,8 @@
             android:paddingBottom="10dp"
             android:paddingLeft="60dp"
             android:paddingRight="60dp"
-            android:src="@drawable/logo_upster"
+            android:src="@drawable/pantalla1_logo_sw"
             android:id="@+id/imageView4"
-            android:layout_alignParentStart="true"
             android:layout_marginTop="27dp"/>
 
        <!-- <FrameLayout
@@ -44,25 +42,25 @@
             android:layout_height="180dp"
             android:background="@drawable/selectable_background"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:drawableTop="@drawable/clubes"
+            android:drawableTop="@drawable/pantalla1_icono_clubes"
             android:layout_below="@+id/imageView4"
-            android:layout_alignLeft="@+id/btn_upster" />
+            android:layout_alignLeft="@+id/imageView4" />
 
             <Button
             android:id="@+id/btn_clases"
             android:layout_width="130dp"
             android:layout_height="180dp"
             android:background="@drawable/selectable_background"
-
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#ff000000"
             android:textStyle="bold"
-            android:drawableTop="@drawable/clases"
+            android:drawableTop="@drawable/pantalla1_icono_clases"
             android:textSize="30dp"
             android:layout_weight="0.33"
             android:layout_below="@+id/imageView4"
-            android:layout_alignRight="@+id/btn_upster" />
-        <Button
+            android:layout_alignRight="@+id/imageView4" />
+
+        <!--<Button
             android:id="@+id/btn_upster"
             android:layout_width="300dp"
             android:layout_height="180dp"
@@ -75,7 +73,7 @@
             android:textSize="30dp"
             android:layout_weight="0.33"
             android:layout_below="@+id/btn_clases"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true" />-->
 
         <TextView
             android:layout_width="wrap_content"
@@ -92,7 +90,7 @@
             android:layout_width="25dp"
             android:layout_height="wrap_content"
             android:id="@+id/imageView5"
-            android:background="@drawable/barra_slide_derecho"
+            android:background="@drawable/pantalla3_icono_menu"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true" />
 

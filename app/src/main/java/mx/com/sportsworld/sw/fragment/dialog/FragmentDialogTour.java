@@ -77,7 +77,7 @@ public class FragmentDialogTour extends DialogFragment {
 
 		View view = inflater.inflate(R.layout.fragment_dialog_tour, null);
 		imgView = (ImageView) view.findViewById(R.id.imgViewTranslateGuide);
-		imgView.setImageResource(R.drawable.pnts_01);
+		//imgView.setImageResource(R.drawable.pnts_01);
 		viewPager = (ViewPager) view.findViewById(R.id.viewPageTour);
 		TourAdapter imgAdapter = new TourAdapter(getActivity(), getmImages(),
 				clickInterface);
@@ -100,7 +100,9 @@ public class FragmentDialogTour extends DialogFragment {
 			@Override
 			public void onPageSelected(int position) {
 				if (position == 0)
-					imgView.setImageResource(R.drawable.pnts_01);
+					position = 0;
+
+			/*		imgView.setImageResource(R.drawable.pnts_01);
 
 				if (position == 1)
 					imgView.setImageResource(R.drawable.pnts_02);
@@ -118,7 +120,7 @@ public class FragmentDialogTour extends DialogFragment {
 					imgView.setImageResource(R.drawable.pnts_06);
 
 				if (position == 6)
-					imgView.setImageResource(R.drawable.pnts_07);
+					imgView.setImageResource(R.drawable.pnts_07);*/
 
 			}
 

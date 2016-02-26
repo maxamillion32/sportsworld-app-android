@@ -36,7 +36,7 @@
                 android:paddingBottom="10dp"
                 android:paddingLeft="60dp"
                 android:paddingRight="60dp"
-                android:src="@drawable/logosw_login"/>
+                android:src="@drawable/pantalla1_logo_sw"/>
 
             <TextView
                 android:id="@+id/lblTitulo"
@@ -133,7 +133,7 @@
                     android:textStyle="bold"
                     android:textColor="@android:color/black"/>
 
-                <Button
+               <!-- <Button
                     android:id="@+id/txtRecordatorio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -145,7 +145,7 @@
                     android:textColor="#ff000000"
                     android:textSize="15dp"
                     android:textStyle="bold"
-                    android:visibility="invisible"/>
+                    android:visibility="invisible"/>-->
 
                 <!--<com.facebook.widget.LoginButton
                     android:id="@+id/btn_facebook_connect"

@@ -12,7 +12,7 @@
         <item name="android:scrollbarSize">3dp</item>
         <item name="android:buttonStyle">@style/Button.SportsWorld</item>
         <item name="android:editTextStyle">@style/EditText.SportsWorld</item>
-        <item name="android:windowBackground">@drawable/bg_window</item>
+        <item name="android:windowBackground">@drawable/pantalla1_textura_fondo</item>
         <item name="android:checkboxStyle">@style/CheckBox.SportsWorld</item>
     </style>
 

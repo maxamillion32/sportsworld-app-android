@@ -129,8 +129,8 @@ public class DummyActivity extends AuthSherlockFragmentActivity implements
 
 			if (normalAdapter)
 				item.setIcon(getResources().getDrawable(R.drawable.menu_editar));
-			else
-				item.setIcon(getResources().getDrawable(R.drawable.menu_ok));
+
+			//else item.setIcon(getResources().getDrawable(R.drawable.menu_ok));
 
 			normalAdapter = !normalAdapter;
 			return true;

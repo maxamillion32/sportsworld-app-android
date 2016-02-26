@@ -47,15 +47,15 @@
     <string name="success_save_changes">Datos actualizados.</string>
     <string name="error_duplicate_routine">Ya tienes una rutina activa. Accede desde el menú principal.</string>
     <string name="error_save_changes">Ocurrió un error al actualizar tus datos, por favor intenta más tarde.</string>
-    <string name="success_favorite_changes">Has agregado este studio a favoritos</string>
-    <string name="error_favorite_changes">Has eliminado este studio de favoritos</string>
+    <string name="success_favorite_changes">Has agregado este club a favoritos</string>
+    <string name="error_favorite_changes">Has eliminado este club de favoritos</string>
     <string name="error_empty_values">Hay campos vacíos, llenalos antes de continuar.</string>
     <string name="error_not_a_member">Debes ser miembro de Upster para utilizar esta función</string>
     <string name="error_not_mark_favorite">Debes loguearte  con tu cuenta de Upster para poder  marcar un  club como favorito</string>
     <string name="error_no_favorite_club1">Toca el icono</string>
-    <string name="error_no_favorite_club2">para agregar como favorito los studios de tu preferencia y consultarlos en esta sección.</string>
-    <string name="error_no_favorite_club3">Para consultar el calendario de clases disponibles por studio, toque el icono </string>
-    <string name="error_no_favorite_club4"> y agregue sus studios favoritos.</string>
+    <string name="error_no_favorite_club2">para agregar como favorito los clubs de tu preferencia y consultarlos en esta sección.</string>
+    <string name="error_no_favorite_club3">Para consultar el calendario de clases disponibles por club, toque el icono </string>
+    <string name="error_no_favorite_club4"> y agregue sus clubs favoritos.</string>
     <string name="recorrido">Recorrido Virtual</string>
 
     <!-- Menu Routine -->
@@ -65,7 +65,7 @@
 
     <!-- Content descriptions -->
     <string name="content_description_sports_world_logo">Logo Upster</string>
-    <string name="content_description_go_to_clubs">Mostrar studios</string>
+    <string name="content_description_go_to_clubs">Mostrar clubs</string>
     <string name="content_description_go_to_classes">Mostrar clases</string>
     <string name="content_description_go_to_my_routine">Mostrar mi rutina</string>
     <string name="content_description_go_to_loyalty_program">Mostrar pantalla de programa de lealtad</string>
@@ -145,12 +145,12 @@
     <string name="empty_financial_info">Sin información que mostrar</string>
 
     <!-- Branch -->
-    <string name="type_favorite">Studios favoritos</string>
+    <string name="type_favorite">clubs favoritos</string>
     <string name="type_coming_soon">Próximas aperturas</string>
     <string name="type_df">D.F. y Área Metropolitana</string>
     <string name="type_province">Foráneos</string>
-    <string name="empty_specific_type_branches">Aun no existen studios para esta categoría</string>
-    <string name="empty_branches">No hay studios</string>
+    <string name="empty_specific_type_branches">Aun no existen clubs para esta categoría</string>
+    <string name="empty_branches">No hay clubs</string>
 
     <!-- BranchOverView -->
     <string name="show_location">Ver ubicación</string>
@@ -159,7 +159,7 @@
 
     <!-- BranchLocation -->
     <string name="success_google_play_services_install">Instalación exitosa de Google Play Services.</string>
-    <string name="error_no_location_for_branch">No hay ubicación para este studio</string>
+    <string name="error_no_location_for_branch">No hay ubicación para este club</string>
     <string name="error_bad_age">Edad menor a 1 o mayor a 100</string>
     <string name="error_bad_height">Altura menor a 1</string>
     <string name="error_bad_weight">Peso menor a 1</string>
@@ -174,7 +174,7 @@
     <string name="content_description_open_calendar">Abrir calendario para elegir fecha</string>
     <string name="select_a_date">Espera a que descarguemos las clases.</string>
     <string name="empty_classes">El día seleccionado no contiene clases</string>
-    <string name="success_book_class">Al llegar al studio, confirma tu asistencia</string>
+    <string name="success_book_class">Al llegar al club, confirma tu asistencia</string>
     <string name="success_book_class_phone">Tu clase se ha agendado en tu calendario</string>
     <string name="error_full_class">No hay cupo para esta clase</string>
     <string name="error_book_class">Error al intentar agendar clase. Intenta de nuevo.</string>

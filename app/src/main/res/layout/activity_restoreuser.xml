@@ -5,12 +5,12 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:id="@+id/imageView"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/ab_solid_sports_world"/>
+        android:background="@drawable/pantalla1_logo_sw"/>
 
     <TextView
         android:id="@+id/lblRecupera"
@@ -59,6 +59,7 @@
         android:layout_below="@+id/txt_email"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="@drawable/pantalla15_btn_finalizar"/>
 
 </LinearLayout>

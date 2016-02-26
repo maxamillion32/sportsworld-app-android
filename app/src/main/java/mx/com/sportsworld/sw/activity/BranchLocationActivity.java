@@ -311,8 +311,9 @@ public class BranchLocationActivity extends AuthSherlockFragmentActivity
 		final MarkerOptions markerOptions = new MarkerOptions();
 		markerOptions.title(cursor.getString(COL_INDEX_NAME));
 		markerOptions.snippet(cursor.getString(COL_INDEX_ADDRESS));
-		markerOptions.icon(BitmapDescriptorFactory
-				.fromResource(R.drawable.marker_branch));
+
+		//markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_branch));
+
 		markerOptions.position(branchPosition);
 		mMap.addMarker(markerOptions);
 

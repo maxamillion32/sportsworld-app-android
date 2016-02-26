@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="90dp"
-    android:background="#fffdcd01"
+    android:background="@drawable/pantalla5_hover_clase"
     android:paddingBottom="@dimen/common_minimum_horizontal_margin"
     android:paddingLeft="@dimen/common_minimum_vertical_margin"
     android:paddingRight="@dimen/common_minimum_vertical_margin"
@@ -39,7 +39,8 @@
         android:text="@string/book"
         android:layout_below="@+id/txt_branch_name"
         android:layout_alignRight="@+id/chc_notify_club"
-        android:layout_alignEnd="@+id/chc_notify_club" />
+        android:layout_alignEnd="@+id/chc_notify_club"
+        android:background="@drawable/pantalla5_btn_agendar"/>
 
     <!--
         <TextView
@@ -85,7 +86,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView9"
-        android:background="@drawable/icono_ubiacion_blanco"
+        android:background="@drawable/pantalla8_icono_ubicacion"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />

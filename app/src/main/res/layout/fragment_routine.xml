@@ -17,8 +17,10 @@
             android:layout_alignParentTop="true"
             android:layout_toLeftOf="@+id/btn_icon_weight"
             android:background="@color/transparente"
-            android:drawableLeft="@drawable/icn_calendario_rutina"
-            android:gravity="left|center_vertical" />
+            android:drawableLeft="@drawable/pantalla16_icono_semana"
+            android:text="SEMANA 1 / DIA 3"
+            android:textColor="@color/black"
+            android:gravity="left|center_vertical"/>
 
         <Button
             android:id="@+id/btn_icon_gender"
@@ -34,7 +36,7 @@
             android:layout_height="35dp"
             android:layout_alignParentTop="true"
             android:layout_toLeftOf="@+id/btn_icon_gender"
-            android:background="@drawable/btn_kg" />
+            android:background="@drawable/pantalla16_icono_cardio" />
     </RelativeLayout>
 
     <FrameLayout
@@ -46,7 +48,7 @@
             android:id="@+id/pager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/empty_photo"
+            android:background="@drawable/pantalla16_foto"
             android:scaleType="centerCrop" />
     </FrameLayout>
 
@@ -130,7 +132,7 @@
             android:id="@+id/btn_show_instructions"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="@drawable/btn_info_rutina"
+            android:background="@drawable/pantalla16_icono_info"
             android:contentDescription="@null"
             android:paddingRight="@dimen/indication_strip_padding" />
     </LinearLayout>

@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/menu_info_routine"
-        android:icon="@drawable/menu_ayuda"
+        android:icon="@drawable/pantalla26_icono_ayuda"
         android:showAsAction="always"
         android:title="Ayuda"/>
 

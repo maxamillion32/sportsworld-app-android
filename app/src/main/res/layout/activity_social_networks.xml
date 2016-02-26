@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back_redes">
+    android:background="@drawable/pantalla6_fondo_compartir">
 
 
     <LinearLayout
@@ -12,26 +12,21 @@
         <RelativeLayout
             android:id="@+id/cab"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#ff790268">
+            android:layout_height="wrap_content">
 
             <Button
-                android:layout_width="220dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:id="@+id/lblTitulo1"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:text="Redes Sociales"
-                android:drawableLeft="@drawable/icono_redes_sociales"
-                android:background="@color/transparente"
-                android:textSize="20dp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+                android:background="@drawable/pantalla6_compartir_face">
+            </Button>
 
         </RelativeLayout>
 
         <TextView
-            android:layout_width="300dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/common_minimum_vertical_separation"
@@ -49,7 +44,7 @@
             android:layout_height="45dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
-            android:background="@drawable/boton_conectar"
+            android:background="@drawable/pantalla12_conectar_face"
             android:visibility="gone"/>
 
         <Button
@@ -58,7 +53,7 @@
             android:layout_height="45dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="30dp"
-            android:background="@drawable/boton_like"
+            android:background="@drawable/pantalla12_icono_redes"
             android:visibility="gone"/>
 
         <Button

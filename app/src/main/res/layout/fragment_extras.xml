@@ -7,10 +7,10 @@
     <Button android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:text="TWITTER"
-              android:background="@drawable/fondo_blanco"/>
+              android:background="@drawable/pantalla10_textura_fondo"/>
     <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="FACEBOOK"
-            android:background="@drawable/fondo_blanco"/>
+            android:background="@drawable/pantalla1_textura_fondo"/>
 
 </LinearLayout>

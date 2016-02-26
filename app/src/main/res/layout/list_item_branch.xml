@@ -42,7 +42,7 @@
             android:layout_width="25dp"
             android:layout_height="20dp"
             android:id="@+id/imageView3"
-            android:background="@drawable/angle_gris"
+            android:background="@drawable/pantalla5_angle"
             android:layout_alignBottom="@+id/imageView6"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
@@ -53,7 +53,7 @@
             android:layout_width="30dp"
             android:layout_height="20dp"
             android:id="@+id/imageView6"
-            android:background="@drawable/icono_ubicacion"
+            android:background="@drawable/pantalla5_icono_ubicacion"
             android:layout_marginRight="40dp"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
@@ -71,7 +71,7 @@
         android:layout_toEndOf="@android:id/text1"
         android:layout_marginBottom="0dp"
         android:layout_gravity="bottom|center_horizontal"
-        android:background="#fffd9d01"
+        android:background="@color/black"
         android:focusable="false" />
 
 

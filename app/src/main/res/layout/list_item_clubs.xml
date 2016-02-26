@@ -26,7 +26,7 @@
             android:layout_width="25dp"
             android:layout_height="20dp"
             android:id="@+id/imageView3"
-            android:background="@drawable/angle_gris"
+            android:background="@drawable/pantalla16_angle"
             android:layout_marginLeft="5dp"
             android:layout_alignTop="@android:id/text1"
             android:layout_alignParentLeft="true" />
@@ -34,7 +34,7 @@
             android:layout_width="30dp"
             android:layout_height="20dp"
             android:id="@+id/imageView6"
-            android:background="@drawable/icono_ubicacion"
+            android:background="@drawable/pantalla8_icono_ubicacion"
             android:layout_alignTop="@android:id/text2"
             android:layout_toLeftOf="@android:id/text2" />
         <TextView

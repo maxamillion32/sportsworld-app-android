@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back_sett" >
+    android:background="@drawable/pantalla1_textura_fondo" >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
             android:paddingBottom="10dp"
             android:paddingLeft="60dp"
             android:paddingRight="60dp"
-            android:src="@drawable/logo_upster"
+            android:src="@drawable/pantalla15_logo_sw"
             android:id="@+id/imageView4" />
 
 
@@ -23,7 +23,7 @@
             android:layout_width="25dp"
             android:layout_height="wrap_content"
             android:id="@+id/imageView5"
-            android:background="@drawable/barra_slide_izquierda"
+            android:background="@drawable/pantalla1_icono_menu"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true" />
 
@@ -47,7 +47,7 @@
             android:background="@drawable/selectable_background"
             android:textColor="#ff000000"
             android:textStyle="bold"
-            android:drawableLeft="@drawable/iconos_redes"
+            android:drawableLeft="@drawable/pantalla6_compartir_face"
 
             android:layout_gravity="center_horizontal"
             android:text="@string/social_networks"
