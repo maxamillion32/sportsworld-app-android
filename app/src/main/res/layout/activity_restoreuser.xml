@@ -4,23 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
+    <RelativeLayout
+        android:id="@+id/header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:id="@+id/imageView"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/pantalla1_logo_sw"/>
+        android:background="@drawable/pantalla1_fondo_header">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pantalla15_logo_sw"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/lblRecupera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="Recupera tu password"
-        android:layout_below="@+id/imageView"
+        android:layout_below="@+id/header"
         android:layout_gravity="center"
-        android:textColor="@color/black"/>
+        style="@style/LetraNormalSW"/>
 
     <Spinner
         android:layout_width="300dp"
@@ -33,33 +35,26 @@
 
     <EditText
         android:id="@+id/txtNumMembresia"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"
         android:inputType="number"
         android:hint = "Número de membresia"
-        android:layout_below="@+id/ddl_Club"/>
+        android:layout_below="@+id/ddl_Club"
+        style="@style/TXTSWCentradoTP"/>
 
     <EditText
         android:id="@+id/txt_email"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"
         android:inputType="textEmailAddress"
         android:hint="Correo Electronico"
-        android:layout_below="@+id/txtNumMembresia" />
+        android:layout_below="@+id/txtNumMembresia"
+        style="@style/TXTSWCentradoTP"/>
 
     <Button
-        android:layout_width="200dp"
-        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Continuar"
         android:id="@+id/btn_continue"
         android:layout_below="@+id/txt_email"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:background="@drawable/pantalla15_btn_finalizar"/>
 
 </LinearLayout>

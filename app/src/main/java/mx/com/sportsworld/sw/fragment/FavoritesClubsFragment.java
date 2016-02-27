@@ -166,7 +166,7 @@ public class FavoritesClubsFragment extends SherlockFragment implements
 		final View view = inflater.inflate(R.layout.fragment_policies,
 				container, false /* attachToRoot */);
 
-		mLnrOptions = view.findViewById(R.id.lnr_options);
+		mLnrOptions = view.findViewById(R.id.footer);
 
 		//mBtnTakeTour = (Button) view.findViewById(R.id.btn_take_tour);
 		mBtnContinue = (Button) view.findViewById(R.id.btn_continue);

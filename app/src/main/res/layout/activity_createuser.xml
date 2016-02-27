@@ -4,20 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-    <ImageButton
+    <RelativeLayout
+        android:id="@+id/header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton"
-        android:layout_gravity="center_horizontal" />
+        android:background="@drawable/pantalla1_fondo_header">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pantalla15_logo_sw"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Crea tu cuenta"
         android:id="@+id/lblCrear"
         android:layout_gravity="center_horizontal"
-        android:textColor="@color/black"/>
+        android:paddingTop="5dp"
+        style="@style/LetraNormalSW"/>
 
     <Spinner
         android:layout_width="@dimen/AnchoObjetos"
@@ -34,66 +38,48 @@
         android:hint = "Seleccione tipo de membresia"/>
 
     <EditText
-        android:layout_width="@dimen/AnchoObjetos"
-        android:layout_height="@dimen/LargoObjetos"
-        android:inputType="number"
-        android:ems="10"
+        style="@style/TXTSWCentradoTP"
         android:id="@+id/txtNumMembresia"
-        android:layout_gravity="center_horizontal"
-        android:hint="Número de membresia"/>
-
-    <EditText
-        android:layout_width="@dimen/AnchoObjetos"
-        android:layout_height="@dimen/LargoObjetos"
         android:inputType="number"
-        android:ems="10"
+        android:hint="@string/HintNumMembresia">
+    </EditText>
+
+
+    <EditText
+        style="@style/TXTSWCentradoTP"
+        android:inputType="number"
         android:id="@+id/txtNumIntegrantes"
-        android:layout_gravity="center_horizontal"
-        android:hint="Número de integrantes"/>
+        android:hint="@string/HintNumIntegrantes"/>
 
     <EditText
-        android:layout_width="@dimen/AnchoObjetos"
-        android:layout_height="@dimen/LargoObjetos"
+        style="@style/TXTSWCentradoTP"
         android:inputType="textEmailAddress"
-        android:ems="10"
         android:id="@+id/txtCorreoE"
-        android:layout_gravity="center_horizontal"
-        android:hint="Correo Electrónico"/>
+        android:hint="@string/HintCorreo"/>
 
     <EditText
-        android:layout_width="@dimen/AnchoObjetos"
-        android:layout_height="@dimen/LargoObjetos"
+        style="@style/TXTSWCentradoTP"
         android:inputType="textEmailAddress"
-        android:ems="10"
         android:id="@+id/txtConfCorreoE"
-        android:layout_gravity="center_horizontal"
         android:hint="Confirmar Correo Electónico"/>
 
     <EditText
-        android:layout_width="@dimen/AnchoObjetos"
-        android:layout_height="@dimen/LargoObjetos"
+        style="@style/TXTSWCentradoTP"
         android:id="@+id/txtUsuario"
-        android:layout_gravity="center_horizontal"
         android:singleLine="true"
         android:maxLength="10"
         android:hint="Usuario"/>
 
     <EditText
-        android:layout_width="@dimen/AnchoObjetos"
-        android:layout_height="@dimen/LargoObjetos"
+        style="@style/TXTSWCentradoTP"
         android:inputType="textPassword"
-        android:ems="10"
         android:id="@+id/txtPassw"
-        android:layout_gravity="center_horizontal"
         android:hint = "Contraseña"/>
 
     <EditText
-        android:layout_width="@dimen/AnchoObjetos"
-        android:layout_height="@dimen/LargoObjetos"
+        style="@style/TXTSWCentradoTP"
         android:inputType="textPassword"
-        android:ems="10"
         android:id="@+id/txtConfPassw"
-        android:layout_gravity="center_horizontal"
         android:hint="Confirma Contraseña"/>
 
     <Button
@@ -102,7 +88,8 @@
         android:text="Crear Cuenta"
         android:layout_marginTop="@dimen/MargenAlto"
         android:id="@+id/btnCrearCuenta"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/pantalla15_btn_finalizar"/>
 
 
 </LinearLayout>

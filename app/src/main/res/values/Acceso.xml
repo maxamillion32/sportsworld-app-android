@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="HintNumMembresia">Número de membresia</string>
+    <string name="HintNumIntegrantes">Número de integrantes</string>
+    <string name="HintCorreo">Correo Electrónico</string>
+</resources>

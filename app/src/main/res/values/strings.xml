@@ -76,7 +76,7 @@
     <!-- Policies -->
     <string name="virtual_tour">Recorrido Virtual</string>
     <string name="settings">Configuración</string>
-    <string name="agree_and_continue">Aceptar y Continuar</string>
+    <string name="agree_and_continue">Continuar</string>
     <string name="take_tour">Tomar Tour</string>
     <string name="agreement">Acepto el aviso de privacidad.</string>
 
@@ -105,7 +105,7 @@
     <string name="social_top">Para poder compartir tus actividades en redes sociales, vincula tus cuentas.</string>
 
     <!-- Profile -->
-    <string name="physical_complexion_title_strip">Complexión física</string>
+    <string name="physical_complexion_title_strip">COMPLEXIÓN FÍSICA</string>
     <string name="age">Edad:</string>
     <string name="height">Estatura:</string>
     <string name="weight">Peso:</string>
@@ -256,5 +256,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_register">Crear cuenta</string>
+    <string name="TituloLogin">ACCESO EXCLUSIVO USUARIOS</string>
+    <string name="UsuarioLogin">Nombre de Usuario o Correo Electronico</string>
+    <string name="OlvidasteContrasena">¿Olvidaste nombre o contraseña?</string>
+    <string name="UsuariosPerfil">USUARIOS</string>
 
 </resources>

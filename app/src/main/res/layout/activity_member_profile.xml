@@ -4,293 +4,244 @@
              android:layout_height="match_parent"
              android:background="@drawable/pantalla1_textura_fondo">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:weightSum="1">
+            android:layout_height="match_parent">
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="1.16">
+                android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/lblCabezera"
-                    android:layout_width="250dp"
+                <RelativeLayout
+                    android:id="@+id/header"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center_horizontal"
-                    android:gravity="center"
-                    android:text="Perfil de Usuario"
-                    android:textAlignment="center"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textColor="@android:color/black"
-                    android:textSize="30dp"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:id="@+id/textView8"
-                    style="@style/TextView_StaticValues_Profile"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_below="@+id/lblCabezera"
-                    android:paddingLeft="5dp"
-                    android:text="@string/name"
-                    android:textColor="@color/black"
-                    android:textSize="17dp"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:id="@+id/textView9"
-                    style="@style/TextView_StaticValues_Profile"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginBottom="59dp"
-                    android:paddingLeft="5dp"
-                    android:text="@string/membership_number"
-                    android:textColor="@color/black"
-                    android:textSize="17dp"
-                    android:textStyle="bold"
-                    android:visibility="gone"/>
-
-                <TextView
-                    android:id="@+id/txt_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_below="@+id/textView8"
-                    android:background="#ffd1d1d1"
-                    android:freezesText="true"
-                    android:paddingRight="5dp"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    />
-
-
-                <TextView
-                    android:id="@+id/txt_membership_type"
-                    android:layout_width="170dp"
-                    android:layout_height="40dp"
-                    android:layout_alignBaseline="@+id/txt_maintenance_type"
-                    android:layout_alignBottom="@+id/txt_maintenance_type"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:background="@color/white"
-                    android:freezesText="true"
-                    android:paddingRight="5dp"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:visibility="gone"/>
+                    android:background="@drawable/pantalla1_fondo_header">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pantalla15_logo_sw"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
 
                 <LinearLayout
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1.16">
 
                     <LinearLayout
-                        android:orientation="vertical"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/pantalla15_icono_usuarios"/>
 
                         <TextView
-                            android:id="@+id/textView11"
-                            style="@style/TextView_StaticValues_Profile"
-                            android:layout_alignBaseline="@+id/textView10"
-                            android:layout_alignBottom="@+id/textView10"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
-                            android:paddingLeft="5dp"
-                            android:text="@string/membership_number"
-                            android:textColor="@color/black"
-                            android:textSize="17dp"
-                            android:textStyle="bold"/>
-
-                        <TextView
-                            android:id="@+id/txt_membership_number"
-                            android:layout_width="170dp"
-                            android:layout_height="40dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
-                            android:layout_alignTop="@+id/textView9"
-                            android:layout_toLeftOf="@+id/txt_maintenance_type"
-                            android:layout_toStartOf="@+id/txt_maintenance_type"
-                            android:background="#ffd1d1d1"
-                            android:freezesText="true"
-                            android:paddingRight="5dp"
-                            android:textColor="@color/black"
-                            android:textSize="20sp"/>
-
-                        <TextView
-                            android:id="@+id/textView15"
-                            style="@style/TextView_StaticValues_Profile"
-                            android:paddingLeft="5dp"
-                            android:text="@string/club_name"
-                            android:textColor="@color/black"
-                            android:textSize="17dp"
-                            android:textStyle="bold"/>
-
-                        <TextView
-                            android:id="@+id/txt_branch_name"
-                            android:layout_width="170dp"
-                            android:layout_height="40dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
-                            android:layout_alignTop="@+id/textView9"
-                            android:layout_toLeftOf="@+id/txt_maintenance_type"
-                            android:layout_toStartOf="@+id/txt_maintenance_type"
-                            android:background="#ffd1d1d1"
-                            android:freezesText="true"
-                            android:paddingRight="5dp"
-                            android:textColor="@color/black"
-                            android:textSize="20sp"/>
+                            android:id="@+id/lblCabezera"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/UsuariosPerfil"
+                            android:textAppearance="@style/loginTitle"
+                            android:layout_gravity="center"/>
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:orientation="vertical"
+                    <TextView
+                        android:id="@+id/textView8"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lblCabezera"
+                        android:paddingLeft="5dp"
+                        android:text="@string/name"
+                        android:textAppearance="@style/LetraNormalSW"/>
 
-                        <TextView
-                            android:id="@+id/textView12"
-                            style="@style/TextView_StaticValues_Profile"
-                            android:layout_above="@+id/txt_membership_number"
-                            android:layout_alignLeft="@+id/txt_membership_number"
-                            android:layout_alignStart="@+id/txt_membership_number"
-                            android:paddingLeft="5dp"
-                            android:text="@string/membership_type"
-                            android:textColor="@color/black"
-                            android:textSize="17dp"
-                            android:textStyle="bold"
-                            android:visibility="visible"/>
+                    <TextView
+                        android:id="@+id/textView9"
+                        style="@style/TextView_StaticValues_Profile"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="59dp"
+                        android:paddingLeft="5dp"
+                        android:text="@string/membership_number"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
 
-                        <TextView
-                            android:id="@+id/txt_membership_type"
-                            android:layout_width="170dp"
-                            android:layout_height="40dp"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentRight="true"
-                            android:layout_alignTop="@+id/txt_branch_name"
-                            android:layout_toEndOf="@+id/txt_membership_type"
-                            android:layout_toRightOf="@+id/txt_membership_type"
-                            android:background="#ffd1d1d1"
-                            android:freezesText="true"
-                            android:paddingRight="5dp"
-                            android:textColor="@color/black"
-                            android:textSize="20dp"
-                            android:visibility="visible"/>
+                    <TextView
+                        android:id="@+id/txt_name"
+                        style="@style/TXTSWNormal"
+                        android:layout_below="@+id/textView8"
+                        android:layout_margin="5dp"/>
 
-                        <TextView
-                            android:id ="@+id/txt_text"
-                            style="@style/TextView_StaticValues_Profile"
-                            android:text="@string/Maintenance"
-                            android:textColor="@color/black"
-                            android:textSize="17dp"
-                            android:textStyle="bold"/>
 
-                        <TextView
-                            android:id="@id/txt_maintenance_type"
-                            android:layout_width="170dp"
-                            android:layout_height="40dp"
-                            android:background="#ffd1d1d1"
-                            android:freezesText="true"
-                            android:paddingRight="5dp"
-                            android:textColor="@color/black"
-                            android:textSize="20dp"/>
+                    <TextView
+                        android:id="@+id/txt_membership_type"
+                        android:layout_width="170dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBaseline="@+id/txt_maintenance_type"
+                        android:layout_alignBottom="@+id/txt_maintenance_type"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@color/white"
+                        android:freezesText="true"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                style= "@style/LetraNormalSW"
+                                android:text="@string/membership_number"/>
+
+                            <TextView
+                                android:id="@+id/txt_membership_number"
+                                style="@style/TXTSWNormal"/>
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                style="@style/LetraNormalSW"
+                                android:text="@string/club_name"/>
+
+                            <TextView
+                                android:id="@+id/txt_branch_name"
+                                style="@style/TXTSWNormal"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                style="@style/LetraNormalSW"
+                                android:text="@string/membership_type"/>
+
+                            <TextView
+                                android:id="@+id/txt_membership_type"
+                                style="@style/TXTSWNormal"/>
+
+                            <TextView
+                                android:id ="@+id/txt_text"
+                                style="@style/LetraNormalSW"
+                                android:text="@string/Maintenance"/>
+
+                            <TextView
+                                android:id="@id/txt_maintenance_type"
+                                style="@style/TXTSWNormal"/>
+                        </LinearLayout>
                     </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        style="@style/TextView_StaticValues_Profile"
+                        android:layout_above="@+id/textView9"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="5dp"
+                        android:text="@string/membership_type"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/txt_maintenance_type"
+                        android:layout_width="170dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBottom="@+id/txt_branch_name"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#ffd1d1d1"
+                        android:freezesText="true"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:visibility="gone"/>
+
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView10"
-                    style="@style/TextView_StaticValues_Profile"
-                    android:layout_above="@+id/textView9"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:paddingLeft="5dp"
-                    android:text="@string/membership_type"
-                    android:textColor="@color/black"
-                    android:textSize="17dp"
-                    android:textStyle="bold"
-                    android:visibility="gone"/>
-
-                <TextView
-                    android:id="@+id/txt_maintenance_type"
-                    android:layout_width="170dp"
-                    android:layout_height="40dp"
-                    android:layout_alignBottom="@+id/txt_branch_name"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:background="#ffd1d1d1"
-                    android:freezesText="true"
-                    android:paddingRight="5dp"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:visibility="gone"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_weight="0.14">
-
-                <include
-                    android:id="@+id/lyt_physical_complexion"
-                    layout="@layout/layout_physical_complexion"
-                    android:layout_width="fill_parent"
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"/>
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <include
+                        android:id="@+id/lyt_physical_complexion"
+                        layout="@layout/layout_physical_complexion"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"/>
+
+                </LinearLayout>
+
+                <com.facebook.widget.LoginButton
+                    android:id="@+id/btn_facebook_connect"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/pantalla12_like_sw"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/btn_save_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/pantalla15_btn_finalizar"
+                    android:text="@string/save_profile"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/btn_show_policies"
+                    style="?android:buttonStyleSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selectable_background"
+                    android:text="@string/show_policies"
+                    android:textColor="@color/black"
+                    android:visibility="invisible"/>
+
             </LinearLayout>
 
-            <com.facebook.widget.LoginButton
-                android:id="@+id/btn_facebook_connect"
-                android:layout_width="200dp"
-                android:layout_height="40dp"
-                android:background="@drawable/com_facebook_loginbutton_blue"
-                android:layout_gravity="center"/>
+        </ScrollView>
 
-            <Button
-                android:id="@+id/btn_save_profile"
-                android:layout_width="200dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center"
-                android:background="#ff8a179b"
-                android:text="@string/save_profile"
-                android:textColor="@color/white"
-                android:textStyle="bold"/>
-
-            <Button
-                android:id="@+id/btn_show_policies"
-                style="?android:buttonStyleSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/selectable_background"
-                android:text="@string/show_policies"
-                android:textColor="@color/black"
-                android:visibility="invisible"/>
-
-        </LinearLayout>
-
-    </ScrollView>
 </FrameLayout>

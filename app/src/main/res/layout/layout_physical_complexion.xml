@@ -5,125 +5,110 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="190dp"
-        android:paddingTop="@dimen/common_minimum_horizontal_margin"
+        android:layout_height="wrap_content"
         android:id="@+id/lblGenero"
         android:background="@color/transparente">
 
-        <TextView
-            style="@style/TextView.ProfileTitleStripText"
-            android:text="@string/physical_complexion_title_strip"
-            android:id="@+id/lblComplexion"
-            android:textColor="@color/black"
-            android:textSize="30dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:freezesText="true"/>
+        <LinearLayout
+            android:id="@+id/complexion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
 
-        <TextView
-            android:id="@+id/txt_gender"
-            android:text="@string/gender"
-            android:textColor="@color/black"
-            android:textSize="17dp"
-            android:textStyle="bold"
-            android:layout_width="70dp"
-            android:layout_height="25dp"
-            android:layout_below="@+id/lblComplexion"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:freezesText="true"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pantalla15_icono_complexion"/>
 
-        <TextView
-            android:id="@+id/fake_dtt_gender"
-            android:layout_width="145dp"
-            android:layout_height="40dp"
-            android:enabled="false"
-            android:focusable="false"
-            android:focusableInTouchMode="false"
-            android:freezesText="true"
-            android:textColor="@color/black"
-            android:background="#ffd1d1d1"
-            android:textSize="20dp"
-            android:layout_below="@+id/txt_gender"
-            android:layout_alignLeft="@+id/txt_gender"
-            android:layout_alignStart="@+id/txt_gender" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="@string/physical_complexion_title_strip"
+                android:id="@+id/lblComplexion"
+                android:textAppearance="@style/loginTitle"/>
 
-        <TextView
-            android:id="@+id/txt_age"
-            android:focusable="false"
-            android:focusableInTouchMode="false"
-            android:freezesText="true"
-            android:text="Fecha Nac."
-            android:textColor="@color/black"
-            android:textSize="17dp"
-            android:textStyle="bold"
-            android:layout_width="126dp"
-            android:layout_height="30dp"
-            android:layout_marginRight="26dp"
-            android:layout_marginEnd="26dp"
-            android:layout_alignTop="@+id/txt_gender"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/edit_birth_profile"
-            android:layout_width="145dp"
-            android:layout_height="40dp"
-            android:enabled="false"
-            android:textColor="@color/black"
-            android:background="#ffd1d1d1"
-            android:textSize="20dp"
-            android:freezesText="true"
-            android:layout_alignTop="@+id/fake_dtt_gender"
-            android:layout_alignLeft="@+id/txt_age"
-            android:layout_alignStart="@+id/txt_age"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_below="@+id/complexion">
 
-        <TextView
-            android:id="@+id/txt_height"
-            android:text="@string/height"
-            android:textColor="@color/black"
-            android:textSize="17dp"
-            android:textStyle="bold"
-            android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:freezesText="true"
-            android:layout_below="@+id/fake_dtt_gender"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignRight="@+id/fake_dtt_gender"
-            android:layout_alignEnd="@+id/fake_dtt_gender" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="4"
+                android:layout_weight="1"
+                android:layout_margin="5dp">
 
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:id="@+id/txt_weight"
-            android:text="@string/weight"
-            android:textColor="@color/black"
-            android:textSize="17dp"
-            android:textStyle="bold"
-            android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:freezesText="true"
-            android:layout_below="@+id/edit_birth_profile"
-            android:layout_alignParentRight="true"
-            android:layout_alignLeft="@+id/edit_birth_profile"
-            android:layout_alignStart="@+id/edit_birth_profile" />
+                <TextView
+                    android:id="@+id/txt_gender"
+                    style="@style/LetraNormalSW"
+                    android:text="@string/gender"/>
 
-        <EditText
-            android:id="@+id/dtt_weight"
-            android:layout_width="125dp"
-            android:layout_height="40dp"
-            android:inputType="numberDecimal"
-            android:textColor="@color/black"
-            android:background="@color/white"
-            android:textSize="20dp"
-            android:freezesText="true"
-            android:layout_below="@+id/txt_weight"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignLeft="@+id/edit_birth_profile"
-            android:layout_alignStart="@+id/edit_birth_profile" />
+                <TextView
+                    android:id="@+id/fake_dtt_gender"
+                    style="@style/TXTSWNormal" />
+
+                <TextView
+                    android:id="@+id/txt_age"
+                    style="@style/LetraNormalSW"
+                    android:text="Fecha Nac."/>
+
+                <EditText
+                    android:id="@+id/edit_birth_profile"
+                    style="@style/TXTSWNormal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/txt_height"
+                    style="@style/LetraNormalSW"
+                    android:text="@string/height"/>
+
+                <EditText
+                    android:id="@+id/dtt_height"
+                    style="@style/TXTSWNormal"/>
+
+                <TextView
+                    android:id="@+id/txt_weight"
+                    style="@style/LetraNormalSW"
+                    android:text="@string/weight"/>
+
+                <EditText
+                    android:id="@+id/dtt_weight"
+                    style="@style/TXTSWNormal"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--        <Spinner
             android:layout_width="125dp"
@@ -136,20 +121,7 @@
             android:layout_alignRight="@+id/fake_dtt_gender"
             android:layout_alignEnd="@+id/fake_dtt_gender" />-->
 
-        <EditText
-            android:id="@+id/dtt_height"
-            android:layout_width="125dp"
-            android:layout_height="40dp"
-            android:inputType="numberDecimal"
-            android:textColor="@color/black"
-            android:background="@color/white"
-            android:textSize="20dp"
-            android:freezesText="true"
-            android:layout_alignTop="@+id/dtt_weight"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignRight="@+id/fake_dtt_gender"
-            android:layout_alignEnd="@+id/fake_dtt_gender" />
+
 
 
     </RelativeLayout>

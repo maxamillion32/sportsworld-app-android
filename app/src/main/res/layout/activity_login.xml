@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
              android:layout_width="match_parent"
-             android:layout_height="match_parent">
+             android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/pantalla1_textura_fondo"
+            >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pantalla1_fondo_header">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pantalla15_logo_sw"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
 
     <FrameLayout
         android:id="@+id/logging_in"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone">
+        android:layout_below="@+id/header">
 
         <ProgressBar
             android:layout_width="wrap_content"
@@ -21,48 +36,33 @@
         android:id="@+id/log_in_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="false">
+        android:fillViewport="false"
+        android:layout_below="@+id/header">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="110dp"
-                android:layout_gravity="center"
-                android:contentDescription="@string/app_name"
-                android:paddingBottom="10dp"
-                android:paddingLeft="60dp"
-                android:paddingRight="60dp"
-                android:src="@drawable/pantalla1_logo_sw"/>
-
             <TextView
                 android:id="@+id/lblTitulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
-                android:text="Acceso usuarios"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="@android:color/black"
-                android:textSize="18dp"
-                android:textStyle="bold"/>
+                android:text="@string/TituloLogin"
+                android:textAppearance="@style/loginTitle"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="30dp"
+                android:layout_margin="20dp"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Nombre de Usuario o Correo Electronico"
-                    android:textAppearance="?android:textAppearanceMedium"
-                    android:textColor="@android:color/black"
-                    android:textStyle="bold"/>
+                    style="@style/LetraNormalSW"
+                    android:text="@string/UsuarioLogin"/>
 
                 <EditText
                     android:id="@+id/dtt_username"
@@ -75,12 +75,8 @@
 
                 <TextView
                     android:id="@+id/textView7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/password"
-                    android:textAppearance="?android:textAppearanceMedium"
-                    android:textColor="@android:color/black"
-                    android:textStyle="bold"/>
+                    style="@style/LetraNormalSW"
+                    android:text="@string/password"/>
 
                 <EditText
                     android:id="@+id/dtt_password"
@@ -94,58 +90,66 @@
                 <Button
                     android:id="@+id/btnRestoreUser"
                     android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:text="¿Olvidaste nombre de usuario o contraseña?"
+                    android:layout_height="wrap_content"
+                    android:text="@string/OlvidasteContrasena"
                     android:layout_gravity="center"
                     android:background="@drawable/selectable_background"
-                    android:textSize="10dp"
+                    android:textSize="15dp"
                     android:textStyle="bold"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"/>
 
                 <Button
                     android:id="@+id/btn_log_in"
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:layout_gravity="center"
-                    android:background="#ff8a179b"
+                    android:background="@drawable/pantalla0_btn_entrar"
                     android:text="@string/log_in_as_member"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="¿Deseas crear una cuenta en SW?"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selectable_background"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Si no eres usuario SW, puedes ingresar por medio de:"
+                    android:textAppearance="@style/FaceBookLetra"
+                    android:gravity="center"/>
 
                 <com.facebook.widget.LoginButton
                     android:id="@+id/btn_facebook_connect"
                     android:layout_width="200dp"
                     android:layout_height="40dp"
-                    android:background="@drawable/com_facebook_loginbutton_blue"
+                    android:background="@drawable/pantalla0_share_on_facebook"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"/>
 
-                <Button
-                    android:id="@+id/btn_register"
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_marginTop="20dp"
-                    android:text="Si no eres Usuario SW, puedes ingresar por este medio"
-                    android:layout_gravity="center"
-                    android:background="@drawable/selectable_background"
-                    android:textSize="10dp"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black"/>
-
-               <!-- <Button
-                    android:id="@+id/txtRecordatorio"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="@drawable/selectable_background"
-                    android:drawableLeft="@drawable/icono_crearcuenta"
-                    android:text="Desea crear una cuenta SW?"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textColor="#ff000000"
-                    android:textSize="15dp"
-                    android:textStyle="bold"
-                    android:visibility="invisible"/>-->
+                <!-- <Button
+                     android:id="@+id/txtRecordatorio"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:background="@drawable/selectable_background"
+                     android:drawableLeft="@drawable/icono_crearcuenta"
+                     android:text="Desea crear una cuenta SW?"
+                     android:textAppearance="?android:attr/textAppearanceMedium"
+                     android:textColor="#ff000000"
+                     android:textSize="15dp"
+                     android:textStyle="bold"
+                     android:visibility="invisible"/>-->
 
                 <!--<com.facebook.widget.LoginButton
                     android:id="@+id/btn_facebook_connect"
@@ -161,4 +165,4 @@
         </LinearLayout>
     </ScrollView>
 
-</FrameLayout>
+</RelativeLayout>

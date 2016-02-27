@@ -5,63 +5,57 @@
     android:orientation="vertical"
     android:background="@drawable/pantalla1_textura_fondo">
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/header"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"></LinearLayout>
+        android:layout_height="wrap_content"
+        android:background="@drawable/pantalla1_fondo_header">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pantalla15_logo_sw"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
 
-    <LinearLayout
-        android:id="@+id/lnr_options"
-        android:layout_width="match_parent"
+    <RelativeLayout
+        android:id = "@+id/footer"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/pantalla9_footer"
-        android:orientation="vertical"
-        android:paddingBottom="8dp"
-        android:paddingLeft="@dimen/common_minimum_horizontal_margin"
-        android:paddingRight="@dimen/common_minimum_horizontal_margin"
-        android:paddingTop="8dp" >
+        android:background="@drawable/pantalla9_footer">
 
         <LinearLayout
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingRight="8dp"
-            android:gravity="right"
-            android:weightSum="1">
-
+            android:gravity="center"
+            android:layout_centerInParent="true">
             <CheckBox
                 android:id="@+id/chc_aggre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:layout_marginLeft="@dimen/common_minimum_vertical_separation"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/agreement"
-                android:textColor="@color/white" />
-
+                android:background="@color/transparente"
+                android:layout_margin="5dp"
+                android:text="@string/agreement"/>
             <Button
                 android:id="@+id/btn_continue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:text="@string/agree_and_continue"
-                android:visibility="invisible"
-                android:textColor="#ff77067e"
-                android:drawableLeft="@drawable/pantalla9_btn_continuar"
-                android:gravity="left|center_vertical"
-                android:background="@color/transparente"
-                android:layout_weight="0.10" />
+                android:textColor="#FFFFFF"
+                android:background="@drawable/pantalla11_btn_entrar"
+                android:visibility="invisible"/>
         </LinearLayout>
-    </LinearLayout>
+    </RelativeLayout>
+
+
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/lnr_options"
-        android:layout_alignParentTop="true" >
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/footer">
 
         <LinearLayout
             android:id="@+id/lnr_progress_container"
