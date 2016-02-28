@@ -1,0 +1,1 @@
+[Thu Feb 25 2016 09:44:06 GMT-0600 (CST)] layer "noticia1.png": Duplicate path: noticia1.png

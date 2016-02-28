@@ -1,0 +1,1 @@
+[Thu Feb 25 2016 09:46:58 GMT-0600 (CST)] layer "btn_omitir.png copy": Expected end of input but "c" found.
