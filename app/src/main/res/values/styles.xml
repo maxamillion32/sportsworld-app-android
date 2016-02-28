@@ -282,4 +282,15 @@
         <item name="android:textColor">#547ECD</item>
     </style>
 
+    <style name="BtnAceptarSW">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/pantalla0_btn_entrar</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
 </resources>

@@ -48,13 +48,10 @@
         style="@style/TXTSWCentradoTP"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:text="Continuar"
         android:id="@+id/btn_continue"
         android:layout_below="@+id/txt_email"
-        android:layout_gravity="center"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/pantalla15_btn_finalizar"/>
+        style="@style/BtnAceptarSW"/>
 
 </LinearLayout>

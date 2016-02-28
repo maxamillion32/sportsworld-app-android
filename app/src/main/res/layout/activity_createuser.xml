@@ -83,13 +83,9 @@
         android:hint="Confirma Contraseña"/>
 
     <Button
-        android:layout_width="@dimen/AnchoObjetos"
-        android:layout_height="@dimen/LargoObjetos"
+        android:layout_marginTop="20dp"
         android:text="Crear Cuenta"
-        android:layout_marginTop="@dimen/MargenAlto"
         android:id="@+id/btnCrearCuenta"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/pantalla15_btn_finalizar"/>
-
+        style="@style/BtnAceptarSW"/>
 
 </LinearLayout>

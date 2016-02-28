@@ -8,4 +8,4 @@
     <item android:state_enabled="true"
         android:drawable="@drawable/btn_fblogout_off" />
 
-</selector><!-- From: file:/C:/SW/facebook_sdk301/src/main/res/drawable/btn_face_logout_custom.xml --><!-- From: file:/C:/SW/facebook_sdk301/build/intermediates/bundles/debug/res/drawable/btn_face_logout_custom.xml -->
+</selector><!-- From: file:/home/dave/Desarrollo/sportsworld-app-android/facebook_sdk301/src/main/res/drawable/btn_face_logout_custom.xml --><!-- From: file:/home/dave/Desarrollo/sportsworld-app-android/facebook_sdk301/build/intermediates/bundles/debug/res/drawable/btn_face_logout_custom.xml -->

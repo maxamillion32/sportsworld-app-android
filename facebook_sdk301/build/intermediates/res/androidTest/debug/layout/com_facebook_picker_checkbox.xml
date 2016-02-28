@@ -23,4 +23,4 @@
     android:focusable="false"
     android:clickable="false"
     android:button="@drawable/com_facebook_button_check" />
-<!-- From: file:/C:/SW/facebook_sdk301/src/main/res/layout/com_facebook_picker_checkbox.xml --><!-- From: file:/C:/SW/facebook_sdk301/build/intermediates/bundles/debug/res/layout/com_facebook_picker_checkbox.xml -->
+<!-- From: file:/home/dave/Desarrollo/sportsworld-app-android/facebook_sdk301/src/main/res/layout/com_facebook_picker_checkbox.xml --><!-- From: file:/home/dave/Desarrollo/sportsworld-app-android/facebook_sdk301/build/intermediates/bundles/debug/res/layout/com_facebook_picker_checkbox.xml -->

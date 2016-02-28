@@ -15,4 +15,4 @@
         android:minHeight="48dip"
         android:text="@string/done_label"
         style="?android:attr/buttonBarButtonStyle" />
-</LinearLayout><!-- From: file:/C:/SW/datetimepicker-library/res/layout/date_picker_done_button.xml -->
+</LinearLayout><!-- From: file:/home/dave/Desarrollo/sportsworld-app-android/datetimepicker-library/res/layout/date_picker_done_button.xml -->

@@ -69,4 +69,4 @@
         android:focusableInTouchMode="true"
         android:background="@color/circle_background" />
 </LinearLayout>
-<!-- From: file:/C:/SW/datetimepicker-library/res/layout-land/time_picker_dialog.xml --><!-- From: file:/C:/SW/datetimepicker-library/build/intermediates/bundles/debug/res/layout-land/time_picker_dialog.xml -->
+<!-- From: file:/home/dave/Desarrollo/sportsworld-app-android/datetimepicker-library/res/layout-land/time_picker_dialog.xml --><!-- From: file:/home/dave/Desarrollo/sportsworld-app-android/datetimepicker-library/build/intermediates/bundles/debug/res/layout-land/time_picker_dialog.xml -->

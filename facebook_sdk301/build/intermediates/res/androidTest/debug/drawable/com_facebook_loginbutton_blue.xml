@@ -21,4 +21,4 @@
           android:drawable="@drawable/com_facebook_loginbutton_blue_focused" />
     <item android:drawable="@drawable/com_facebook_loginbutton_blue_normal" />
 </selector>
-<!-- From: file:/C:/SW/facebook_sdk301/src/main/res/drawable/com_facebook_loginbutton_blue.xml --><!-- From: file:/C:/SW/facebook_sdk301/build/intermediates/bundles/debug/res/drawable/com_facebook_loginbutton_blue.xml -->
+<!-- From: file:/home/dave/Desarrollo/sportsworld-app-android/facebook_sdk301/src/main/res/drawable/com_facebook_loginbutton_blue.xml --><!-- From: file:/home/dave/Desarrollo/sportsworld-app-android/facebook_sdk301/build/intermediates/bundles/debug/res/drawable/com_facebook_loginbutton_blue.xml -->

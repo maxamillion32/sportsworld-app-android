@@ -101,14 +101,8 @@
 
                 <Button
                     android:id="@+id/btn_log_in"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/pantalla0_btn_entrar"
-                    android:text="@string/log_in_as_member"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textStyle="bold"/>
+                    style="@style/BtnAceptarSW"
+                    android:text="@string/log_in_as_member"/>
 
                 <Button
                     android:id="@+id/btn_register"

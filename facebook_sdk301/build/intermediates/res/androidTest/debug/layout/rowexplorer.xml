@@ -3,4 +3,4 @@
     android:id="@+id/rowtext"
     android:layout_width="fill_parent"
     android:layout_height="30sp"
-    android:textSize="18sp" /><!-- From: file:/C:/SW/facebook_sdk301/src/main/res/layout/rowexplorer.xml --><!-- From: file:/C:/SW/facebook_sdk301/build/intermediates/bundles/debug/res/layout/rowexplorer.xml -->
+    android:textSize="18sp" /><!-- From: file:/home/dave/Desarrollo/sportsworld-app-android/facebook_sdk301/src/main/res/layout/rowexplorer.xml --><!-- From: file:/home/dave/Desarrollo/sportsworld-app-android/facebook_sdk301/build/intermediates/bundles/debug/res/layout/rowexplorer.xml -->

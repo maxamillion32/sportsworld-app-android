@@ -8,4 +8,4 @@
     <include layout="@layout/date_picker_view_animator" />
     <View android:background="@color/line_background" android:layout_width="fill_parent" android:layout_height="1.0dip" />
     <include layout="@layout/date_picker_done_button" />
-</LinearLayout><!-- From: file:/C:/SW/datetimepicker-library/res/layout-w270dp-h560dp/date_picker_dialog.xml --><!-- From: file:/C:/SW/datetimepicker-library/build/intermediates/bundles/debug/res/layout-w270dp-h560dp-v13/date_picker_dialog.xml -->
+</LinearLayout><!-- From: file:/home/dave/Desarrollo/sportsworld-app-android/datetimepicker-library/res/layout-w270dp-h560dp/date_picker_dialog.xml --><!-- From: file:/home/dave/Desarrollo/sportsworld-app-android/datetimepicker-library/build/intermediates/bundles/debug/res/layout-w270dp-h560dp-v13/date_picker_dialog.xml -->

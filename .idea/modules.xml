@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/datetimepicker-library/datetimepicker-library.iml" filepath="$PROJECT_DIR$/datetimepicker-library/datetimepicker-library.iml" />
       <module fileurl="file://$PROJECT_DIR$/facebook_sdk301/facebook_sdk301.iml" filepath="$PROJECT_DIR$/facebook_sdk301/facebook_sdk301.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sportsworld-app-android.iml" filepath="$PROJECT_DIR$/sportsworld-app-android.iml" />
     </modules>
   </component>
 </project>

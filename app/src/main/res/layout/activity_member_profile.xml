@@ -221,14 +221,8 @@
 
                 <Button
                     android:id="@+id/btn_save_profile"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/pantalla15_btn_finalizar"
-                    android:text="@string/save_profile"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"/>
+                    style="@style/BtnAceptarSW"
+                    android:text="@string/save_profile"/>
 
                 <Button
                     android:id="@+id/btn_show_policies"

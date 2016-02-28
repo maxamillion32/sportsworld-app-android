@@ -18,4 +18,4 @@
   <item android:state_checked="true" android:drawable="@drawable/com_facebook_button_check_on" />
   <item android:drawable="@drawable/com_facebook_button_check_off" />
 </selector>
-<!-- From: file:/C:/SW/facebook_sdk301/src/main/res/drawable/com_facebook_button_check.xml -->
+<!-- From: file:/home/dave/Desarrollo/sportsworld-app-android/facebook_sdk301/src/main/res/drawable/com_facebook_button_check.xml -->

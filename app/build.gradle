@@ -5,7 +5,7 @@ android {
         config {
             keyAlias 'SportsWorld'
             keyPassword 'sportsworld'
-            storeFile file('C:/SW/Keys')
+            storeFile file('/home/dave/Desarrollo/sportsworld-app-android/Keys')
             storePassword 'sportsworld'
         }
     }
@@ -14,7 +14,7 @@ android {
     compileOptions.encoding = 'ISO-8859-1'
     defaultConfig {
         applicationId "mx.com.sportsworld.sw"
-        minSdkVersion 9
+        minSdkVersion 17
         targetSdkVersion 17
         versionCode 1
         versionName "1.0"
@@ -25,7 +25,7 @@ android {
             debuggable false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.config
-            proguardFile 'C:/SW/app'
+            proguardFile '/home/dave/Desarrollo/sportsworld-app-android/app'
         }
     }
 }
