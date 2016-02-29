@@ -3,11 +3,118 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pantalla1_fondo_header">
+
+        <ImageView
+            android:id="@+id/SWImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pantalla15_logo_sw"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pantalla0_icono_menu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        android:background="@drawable/back_transparente">
+        android:layout_below="@+id/header"
+        android:background="@drawable/pantalla1_textura_fondo">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="4"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:id="@+id/mgb_go_to_clubs"
+                style="@style/SWLinearlayoutHorzMenu">
+
+                <Button
+
+                    android:background="@drawable/pantalla1_icono_clubes"
+                    style="@style/SWBtnMenu"/>
+
+                <TextView
+                    style="@style/SWTxtMenu"
+                    android:text="Clubes"
+                    />
+
+                <ImageView
+                    style="@style/SWAngleMenu"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_clases"
+                style="@style/SWLinearlayoutHorzMenu">
+
+                <Button
+                    android:background="@drawable/pantalla1_icono_clases"
+                    style="@style/SWBtnMenu"/>
+
+                <TextView
+                    android:text="Clases"
+                    style="@style/SWTxtMenu"/>
+
+                <ImageView
+                    style="@style/SWAngleMenu"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id = "@+id/btn_rutinas"
+                style="@style/SWLinearlayoutHorzMenu">
+
+                <Button
+                    android:background="@drawable/pantalla1_icono_rutinas"
+                    style="@style/SWBtnMenu"/>
+
+                <TextView
+                    android:text="Rutinas"
+                    style="@style/SWTxtMenu"/>
+
+                <ImageView
+                    style="@style/SWAngleMenu"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id = "@+id/btn_noticias"
+                style="@style/SWLinearlayoutHorzMenu">
+
+                <Button
+                    android:background="@drawable/pantalla1_icono_noticias"
+                    style="@style/SWBtnMenu"/>
+
+                <TextView
+                    android:text="Noticias"
+                    style="@style/SWTxtMenu"/>
+
+                <ImageView
+                    style="@style/SWAngleMenu"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
 
         <!--<ImageView
             android:layout_width="match_parent"
@@ -31,54 +138,12 @@
         -->
 
 
-            <Button
-            android:id="@+id/mgb_go_to_clubs"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_centerHorizontal="true"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:drawableTop="@drawable/pantalla1_icono_clubes"
-            android:background="@drawable/selectable_background"
-            android:layout_alignBottom="@+id/textView13"
-            android:layout_toLeftOf="@+id/textView13"
-            android:layout_toStartOf="@+id/textView13"/>
 
-        <Button
-            android:id="@+id/btn_clases"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/selectable_background"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="#ff000000"
-            android:textStyle="bold"
-            android:drawableTop="@drawable/pantalla1_icono_clases"
-            android:textSize="30dp"
-            android:layout_weight="0.33"
-            android:layout_below="@+id/mgb_go_to_clubs"
-            android:layout_alignLeft="@+id/mgb_go_to_clubs"
-            android:layout_alignStart="@+id/mgb_go_to_clubs"/>
 
-        <Button
-                android:id = "@+id/btn_rutinas"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:drawableTop="@drawable/pantalla1_icono_rutinas"
-                android:textSize="30dp"
-                android:layout_weight = ".033"
-                android:background="@drawable/selectable_background"
-                android:layout_below="@+id/btn_noticias"
-                android:layout_alignLeft="@+id/mgb_go_to_clubs"
-                android:layout_alignStart="@+id/mgb_go_to_clubs"/>
 
-        <Button
-            android:id = "@+id/btn_noticias"
-            android:drawableTop="@drawable/pantalla1_icono_noticias"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/selectable_background"
-            android:layout_alignLeft="@+id/btn_clases"
-            android:layout_below="@+id/btn_clases"
-            />
+
+
+
 
         <Button
             android:id="@+id/btn_upster"
@@ -105,13 +170,13 @@
             android:layout_below="@+id/imageView4"
             android:layout_centerHorizontal="true"/>
 
-        <ImageView
+        <!--<ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView5"
             android:background="@drawable/pantalla30_icono_menu"
             android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true" />
+            android:layout_alignParentRight="true" />-->
 
         EditText
             android:layout_width="wrap_content"

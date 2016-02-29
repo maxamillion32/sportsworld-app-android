@@ -3,8 +3,7 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="@drawable/pantalla1_textura_fondo"
-            >
+                android:background="@drawable/pantalla1_textura_fondo">
 
     <RelativeLayout
         android:id="@+id/header"
@@ -46,12 +45,9 @@
 
             <TextView
                 android:id="@+id/lblTitulo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_gravity="center_horizontal"
                 android:text="@string/TituloLogin"
-                android:textAppearance="@style/loginTitle"/>
+                style="@style/SWlblTitulos"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -61,7 +57,7 @@
 
                 <TextView
                     android:id="@+id/textView"
-                    style="@style/LetraNormalSW"
+                    style="@style/SWLetraNormal"
                     android:text="@string/UsuarioLogin"/>
 
                 <EditText
@@ -75,7 +71,7 @@
 
                 <TextView
                     android:id="@+id/textView7"
-                    style="@style/LetraNormalSW"
+                    style="@style/SWLetraNormal"
                     android:text="@string/password"/>
 
                 <EditText
@@ -101,7 +97,7 @@
 
                 <Button
                     android:id="@+id/btn_log_in"
-                    style="@style/BtnAceptarSW"
+                    style="@style/SWBtnAceptar"
                     android:text="@string/log_in_as_member"/>
 
                 <Button

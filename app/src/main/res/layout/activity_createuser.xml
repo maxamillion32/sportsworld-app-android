@@ -21,7 +21,7 @@
         android:id="@+id/lblCrear"
         android:layout_gravity="center_horizontal"
         android:paddingTop="5dp"
-        style="@style/LetraNormalSW"/>
+        style="@style/SWLetraNormal"/>
 
     <Spinner
         android:layout_width="@dimen/AnchoObjetos"
@@ -38,7 +38,7 @@
         android:hint = "Seleccione tipo de membresia"/>
 
     <EditText
-        style="@style/TXTSWCentradoTP"
+        style="@style/SWTxtCentradoTP"
         android:id="@+id/txtNumMembresia"
         android:inputType="number"
         android:hint="@string/HintNumMembresia">
@@ -46,38 +46,38 @@
 
 
     <EditText
-        style="@style/TXTSWCentradoTP"
+        style="@style/SWTxtCentradoTP"
         android:inputType="number"
         android:id="@+id/txtNumIntegrantes"
         android:hint="@string/HintNumIntegrantes"/>
 
     <EditText
-        style="@style/TXTSWCentradoTP"
+        style="@style/SWTxtCentradoTP"
         android:inputType="textEmailAddress"
         android:id="@+id/txtCorreoE"
         android:hint="@string/HintCorreo"/>
 
     <EditText
-        style="@style/TXTSWCentradoTP"
+        style="@style/SWTxtCentradoTP"
         android:inputType="textEmailAddress"
         android:id="@+id/txtConfCorreoE"
         android:hint="Confirmar Correo Electónico"/>
 
     <EditText
-        style="@style/TXTSWCentradoTP"
+        style="@style/SWTxtCentradoTP"
         android:id="@+id/txtUsuario"
         android:singleLine="true"
         android:maxLength="10"
         android:hint="Usuario"/>
 
     <EditText
-        style="@style/TXTSWCentradoTP"
+        style="@style/SWTxtCentradoTP"
         android:inputType="textPassword"
         android:id="@+id/txtPassw"
         android:hint = "Contraseña"/>
 
     <EditText
-        style="@style/TXTSWCentradoTP"
+        style="@style/SWTxtCentradoTP"
         android:inputType="textPassword"
         android:id="@+id/txtConfPassw"
         android:hint="Confirma Contraseña"/>
@@ -86,6 +86,6 @@
         android:layout_marginTop="20dp"
         android:text="Crear Cuenta"
         android:id="@+id/btnCrearCuenta"
-        style="@style/BtnAceptarSW"/>
+        style="@style/SWBtnAceptar"/>
 
 </LinearLayout>

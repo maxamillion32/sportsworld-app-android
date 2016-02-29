@@ -17,6 +17,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import com.actionbarsherlock.app.SherlockFragment;
 import com.fourmob.datetimepicker.date.DatePickerDialog;
@@ -52,10 +53,10 @@ public class DashboardFragment extends SherlockFragment implements
 	//private ImageView mMgvDoingRoutine;
 
 	/*	Declaracion de Bottones	*/
-	private Button mgbGoToClasses;
-	private Button mgbGoToclubs;
-	private Button mgbGoToRutinas;
-	private Button mgbGoToNoticias;
+	private LinearLayout mgbGoToClasses;
+	private LinearLayout mgbGoToclubs;
+	private LinearLayout mgbGoToRutinas;
+	private LinearLayout mgbGoToNoticias;
 	private Button mgbGoToUpster;
 	/*	Declaracion de Bottones	*/
 
@@ -133,13 +134,13 @@ public class DashboardFragment extends SherlockFragment implements
 
 		/*	Extrae el boton del XML y lo liga con el del java	*/
 
-		mgbGoToclubs = (Button) view.findViewById(R.id.mgb_go_to_clubs);
+		mgbGoToclubs = (LinearLayout) view.findViewById(R.id.mgb_go_to_clubs);
 
-		mgbGoToClasses = (Button) view.findViewById(R.id.btn_clases);
+		mgbGoToClasses = (LinearLayout) view.findViewById(R.id.btn_clases);
 
-		mgbGoToRutinas = (Button) view.findViewById(R.id.btn_rutinas);
+		mgbGoToRutinas = (LinearLayout) view.findViewById(R.id.btn_rutinas);
 
-		mgbGoToNoticias = (Button) view.findViewById(R.id.btn_noticias);
+		mgbGoToNoticias = (LinearLayout) view.findViewById(R.id.btn_noticias);
 
 		mgbGoToUpster = (Button) view.findViewById(R.id.btn_upster);
 

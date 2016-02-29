@@ -22,12 +22,10 @@
                 android:background="@drawable/pantalla15_icono_complexion"/>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/SWlblTitulos"
                 android:paddingLeft="5dp"
                 android:text="@string/physical_complexion_title_strip"
-                android:id="@+id/lblComplexion"
-                android:textAppearance="@style/loginTitle"/>
+                android:id="@+id/lblComplexion"/>
 
         </LinearLayout>
 
@@ -48,21 +46,21 @@
 
                 <TextView
                     android:id="@+id/txt_gender"
-                    style="@style/LetraNormalSW"
+                    style="@style/SWLetraNormal"
                     android:text="@string/gender"/>
 
                 <TextView
                     android:id="@+id/fake_dtt_gender"
-                    style="@style/TXTSWNormal" />
+                    style="@style/SWTxtNormal" />
 
                 <TextView
-                    android:id="@+id/txt_age"
-                    style="@style/LetraNormalSW"
-                    android:text="Fecha Nac."/>
+                    android:id="@+id/txt_height"
+                    style="@style/SWLetraNormal"
+                    android:text="@string/height"/>
 
                 <EditText
-                    android:id="@+id/edit_birth_profile"
-                    style="@style/TXTSWNormal"/>
+                    android:id="@+id/dtt_height"
+                    style="@style/SWTxtNormal"/>
 
             </LinearLayout>
 
@@ -75,22 +73,22 @@
                 android:layout_margin="5dp">
 
                 <TextView
-                    android:id="@+id/txt_height"
-                    style="@style/LetraNormalSW"
-                    android:text="@string/height"/>
+                    android:id="@+id/txt_age"
+                    style="@style/SWLetraNormal"
+                    android:text="Fecha Nac."/>
 
                 <EditText
-                    android:id="@+id/dtt_height"
-                    style="@style/TXTSWNormal"/>
+                    android:id="@+id/edit_birth_profile"
+                    style="@style/SWTxtNormal"/>
 
                 <TextView
                     android:id="@+id/txt_weight"
-                    style="@style/LetraNormalSW"
+                    style="@style/SWLetraNormal"
                     android:text="@string/weight"/>
 
                 <EditText
                     android:id="@+id/dtt_weight"
-                    style="@style/TXTSWNormal"/>
+                    style="@style/SWTxtNormal"/>
 
             </LinearLayout>
 

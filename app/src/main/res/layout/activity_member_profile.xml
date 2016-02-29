@@ -48,12 +48,9 @@
 
                         <TextView
                             android:id="@+id/lblCabezera"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
                             android:text="@string/UsuariosPerfil"
-                            android:textAppearance="@style/loginTitle"
-                            android:layout_gravity="center"/>
+                            style="@style/SWlblTitulos"/>
 
                     </LinearLayout>
 
@@ -64,7 +61,7 @@
                         android:layout_below="@+id/lblCabezera"
                         android:paddingLeft="5dp"
                         android:text="@string/name"
-                        android:textAppearance="@style/LetraNormalSW"/>
+                        android:textAppearance="@style/SWLetraNormal"/>
 
                     <TextView
                         android:id="@+id/textView9"
@@ -82,7 +79,7 @@
 
                     <TextView
                         android:id="@+id/txt_name"
-                        style="@style/TXTSWNormal"
+                        style="@style/SWTxtNormal"
                         android:layout_below="@+id/textView8"
                         android:layout_margin="5dp"/>
 
@@ -117,21 +114,21 @@
 
                             <TextView
                                 android:id="@+id/textView11"
-                                style= "@style/LetraNormalSW"
+                                style= "@style/SWLetraNormal"
                                 android:text="@string/membership_number"/>
 
                             <TextView
                                 android:id="@+id/txt_membership_number"
-                                style="@style/TXTSWNormal"/>
+                                style="@style/SWTxtNormal"/>
 
                             <TextView
                                 android:id="@+id/textView15"
-                                style="@style/LetraNormalSW"
+                                style="@style/SWLetraNormal"
                                 android:text="@string/club_name"/>
 
                             <TextView
                                 android:id="@+id/txt_branch_name"
-                                style="@style/TXTSWNormal"/>
+                                style="@style/SWTxtNormal"/>
 
                         </LinearLayout>
 
@@ -144,21 +141,21 @@
 
                             <TextView
                                 android:id="@+id/textView12"
-                                style="@style/LetraNormalSW"
+                                style="@style/SWLetraNormal"
                                 android:text="@string/membership_type"/>
 
                             <TextView
                                 android:id="@+id/txt_membership_type"
-                                style="@style/TXTSWNormal"/>
+                                style="@style/SWTxtNormal"/>
 
                             <TextView
                                 android:id ="@+id/txt_text"
-                                style="@style/LetraNormalSW"
+                                style="@style/SWLetraNormal"
                                 android:text="@string/Maintenance"/>
 
                             <TextView
                                 android:id="@id/txt_maintenance_type"
-                                style="@style/TXTSWNormal"/>
+                                style="@style/SWTxtNormal"/>
                         </LinearLayout>
                     </LinearLayout>
 
@@ -221,7 +218,7 @@
 
                 <Button
                     android:id="@+id/btn_save_profile"
-                    style="@style/BtnAceptarSW"
+                    style="@style/SWBtnAceptar"
                     android:text="@string/save_profile"/>
 
                 <Button

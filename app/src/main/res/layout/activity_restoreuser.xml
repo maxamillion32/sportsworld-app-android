@@ -22,7 +22,7 @@
         android:text="Recupera tu password"
         android:layout_below="@+id/header"
         android:layout_gravity="center"
-        style="@style/LetraNormalSW"/>
+        style="@style/SWLetraNormal"/>
 
     <Spinner
         android:layout_width="300dp"
@@ -38,20 +38,20 @@
         android:inputType="number"
         android:hint = "Número de membresia"
         android:layout_below="@+id/ddl_Club"
-        style="@style/TXTSWCentradoTP"/>
+        style="@style/SWTxtCentradoTP"/>
 
     <EditText
         android:id="@+id/txt_email"
         android:inputType="textEmailAddress"
         android:hint="Correo Electronico"
         android:layout_below="@+id/txtNumMembresia"
-        style="@style/TXTSWCentradoTP"/>
+        style="@style/SWTxtCentradoTP"/>
 
     <Button
         android:layout_marginTop="50dp"
         android:text="Continuar"
         android:id="@+id/btn_continue"
         android:layout_below="@+id/txt_email"
-        style="@style/BtnAceptarSW"/>
+        style="@style/SWBtnAceptar"/>
 
 </LinearLayout>
