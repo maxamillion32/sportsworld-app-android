@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pantalla1_textura_fondo">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pantalla1_fondo_header">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pantalla15_logo_sw"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             android:background="@drawable/pantalla1_textura_fondo">
+             android:background="@drawable/pantalla1_textura_fondo"
+            android:layout_below="@+id/header">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -12,18 +33,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
-                <RelativeLayout
-                    android:id="@+id/header"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/pantalla1_fondo_header">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/pantalla15_logo_sw"
-                        android:layout_centerInParent="true"/>
-                </RelativeLayout>
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -236,3 +245,5 @@
         </ScrollView>
 
 </FrameLayout>
+
+</RelativeLayout>
