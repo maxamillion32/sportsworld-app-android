@@ -1,121 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_alignParentTop="true"
-    >
+    android:orientation="vertical"
+    android:background="@drawable/pantalla1_textura_fondo">
 
-    <LinearLayout
-        android:id="@id/internal_progress_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:visibility="gone" >
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pantalla1_fondo_header"
+        xmlns:android="http://schemas.android.com/apk/res/android">
 
- 
-        <TextView
+        <ImageView
+            android:id="@+id/SWImg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="4dp"
-            android:singleLine="true"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textIsSelectable="false" />
-    </LinearLayout>
+            android:background="@drawable/pantalla15_logo_sw"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pantalla0_icono_menu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
 
-    <FrameLayout
-        android:id="@id/internal_list_container"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:visibility="invisible">
+    </RelativeLayout>
 
-        <ListView
-            android:id="@android:id/list"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:drawSelectorOnTop="false"
-            android:visibility="gone" />
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header">
 
         <LinearLayout
+            android:id="@id/internal_progress_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:visibility="gone" >
+
 
             <TextView
-                android:id="@id/internal_empty"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/common_minimum_vertical_separation"
-                android:gravity="center"
-                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:paddingTop="4dp"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textIsSelectable="false" />
 
-            <Button
-                android:id="@+id/btn_retry"
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@id/internal_list_container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible">
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawSelectorOnTop="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@id/internal_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/common_minimum_vertical_separation"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textIsSelectable="false" />
+
+                <Button
+                    android:id="@+id/btn_retry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/retry"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="552dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/retry"
-                android:visibility="gone" />
-        </LinearLayout>
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:id="@+id/lin_clubes_fav"
+                    style="@style/SWLinearlayoutHorzMenu">
+
+                    <ImageView
+                        style="@style/SWBtnMenu"
+                        android:id="@+id/clubes_fav"/>
+
+                    <TextView
+                        style="@style/SWTxtMenu"
+                        android:id = "@+id/txtClubes_fav"/>
+
+                    <ImageView
+                        style="@style/SWAngleMenu" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_prox_pertura"
+                    style="@style/SWLinearlayoutHorzMenu">
+
+                    <ImageView
+                        style="@style/SWBtnMenu"
+                        android:id="@+id/prox_pertura"/>
+
+                    <TextView
+                        style="@style/SWTxtMenu"
+                        android:id = "@+id/txtProx_pertura"/>
+
+                    <ImageView
+                        style="@style/SWAngleMenu" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_area_metro"
+                    style="@style/SWLinearlayoutHorzMenu">
+
+                    <ImageView
+                        style="@style/SWBtnMenu"
+                        android:id="@+id/area_metro"/>
+
+                    <TextView
+                        style="@style/SWTxtMenu"
+                        android:id = "@+id/txtArea_metro"/>
+
+                    <ImageView
+                        style="@style/SWAngleMenu" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_foraneos"
+                    style="@style/SWLinearlayoutHorzMenu">
+
+                    <ImageView
+                        style="@style/SWBtnMenu"
+                        android:id="@+id/foraneos"/>
+
+                    <TextView
+                        style="@style/SWTxtMenu"
+                        android:id = "@+id/txtForaneos"/>
+
+                    <ImageView
+                        style="@style/SWAngleMenu" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
     </FrameLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="552dp"
-        android:layout_gravity="center_horizontal">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/clubes_fav"
-            android:layout_marginTop="34dp"
-            android:adjustViewBounds="true"
-            android:maxHeight="900px"
-            android:maxWidth="900px"
-            android:minHeight="900px"
-            android:minWidth="900px"
-            android:padding="5sp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/prox_pertura"
-            android:adjustViewBounds="true"
-            android:maxHeight="900px"
-            android:maxWidth="900px"
-            android:minHeight="900px"
-            android:minWidth="900px"
-            android:padding="5sp"
-            android:layout_below="@+id/clubes_fav"
-            android:layout_alignStart="@+id/clubes_fav" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/area_metro"
-            android:adjustViewBounds="true"
-            android:maxHeight="900px"
-            android:maxWidth="900px"
-            android:minHeight="900px"
-            android:minWidth="900px"
-            android:padding="5sp"
-            android:layout_below="@+id/prox_pertura"
-            android:layout_alignStart="@+id/prox_pertura" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/foraneos"
-            android:adjustViewBounds="true"
-            android:maxHeight="900px"
-            android:maxWidth="900px"
-            android:minHeight="900px"
-            android:minWidth="900px"
-            android:padding="5sp"
-            android:layout_below="@+id/area_metro"
-            android:layout_alignParentStart="true" />
-    </RelativeLayout>
-</FrameLayout>
+</RelativeLayout>

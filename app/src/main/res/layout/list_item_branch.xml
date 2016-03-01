@@ -18,11 +18,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerVertical="true"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@drawable/pantalla2_textura_fondo">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="33dp">
+        android:layout_height="40dp">
         <TextView
             android:id="@android:id/text1"
             style="@style/ListBranchClubs"

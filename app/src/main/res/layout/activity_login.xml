@@ -10,11 +10,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/pantalla1_fondo_header">
+
         <ImageView
+            android:id="@+id/SWImg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/pantalla15_logo_sw"
             android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pantalla0_icono_menu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
     </RelativeLayout>
 
     <FrameLayout

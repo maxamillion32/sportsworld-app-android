@@ -41,7 +41,7 @@ public class SpecificBranchTypeListActivity extends
 
 	/** The Constant EXTRA_TYPE. */
 	//public static final String EXTRA_TYPE = "com.sportsworld.android.extra.TYPE";
-	public static final String EXTRA_TYPE = "com.upster.extra.TYPE";
+	public static final String EXTRA_TYPE = "com.sportsworld.android.extra.TYPE";
 
 	/** The Constant FRAG_TAG_SPECIFIC_BRANCH_TYPE. */
 	private static final String FRAG_TAG_SPECIFIC_BRANCH_TYPE = "frag_tag_specific_branch_type";

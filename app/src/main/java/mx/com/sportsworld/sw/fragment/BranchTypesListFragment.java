@@ -26,7 +26,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -120,6 +122,10 @@ public class BranchTypesListFragment extends SherlockWorkingListFragment
 
 	ImageView iArea, iClubes, iForaneos, iAperturas;
 
+	TextView txtArea, txtClubes, txtForaneos, txtAperturas;
+
+	LinearLayout linArea, linClubes, linForaneos, linAperturas;
+
 	Context cont;
 
 	boolean bandera = false;
@@ -157,16 +163,27 @@ public class BranchTypesListFragment extends SherlockWorkingListFragment
 				null /* root */, false /* attachToRoot */);
 		mBtnRetry = (Button) view.findViewById(R.id.btn_retry);
 		mBtnRetry.setOnClickListener(this);
-        iClubes = (ImageView) view.findViewById(R.id.clubes_fav);
+
+		iClubes = (ImageView) view.findViewById(R.id.clubes_fav);
         iForaneos = (ImageView) view.findViewById(R.id.foraneos);
         iArea = (ImageView) view.findViewById(R.id.area_metro);
         iAperturas = (ImageView) view.findViewById(R.id.prox_pertura);
 
+		txtClubes = (TextView) view.findViewById(R.id.txtClubes_fav);
+		txtForaneos = (TextView) view.findViewById(R.id.txtForaneos);
+		txtArea = (TextView) view.findViewById(R.id.txtArea_metro);
+		txtAperturas = (TextView) view.findViewById(R.id.txtProx_pertura);
+
+		linClubes = (LinearLayout) view.findViewById(R.id.lin_clubes_fav);
+		linForaneos = (LinearLayout) view.findViewById(R.id.lin_foraneos);
+		linArea = (LinearLayout) view.findViewById(R.id.lin_area_metro);
+		linAperturas = (LinearLayout) view.findViewById(R.id.lin_prox_pertura);
+
         //mBtnRetry.setOnClickListener(this);
-        iClubes.setOnClickListener(this);
-        iForaneos.setOnClickListener(this);
-        iArea.setOnClickListener(this);
-        iAperturas.setOnClickListener(this);
+		linClubes.setOnClickListener(this);
+		linForaneos.setOnClickListener(this);
+		linArea.setOnClickListener(this);
+		linAperturas.setOnClickListener(this);
 
 		loadImages();
 
@@ -620,7 +637,7 @@ public class BranchTypesListFragment extends SherlockWorkingListFragment
         final Intent specificBranchTypeList = new Intent(
 				getActivity() /* context */, SpecificBranchTypeListActivity.class);
         switch(v.getId()){
-            case R.id.clubes_fav:
+            case R.id.lin_clubes_fav:
                 if (!isMember()) {
                     Toast.makeText(getActivity(),
 							getResources().getString(R.string.error_not_a_member),
@@ -634,20 +651,20 @@ public class BranchTypesListFragment extends SherlockWorkingListFragment
                             Branch.TYPE_FAVORITE);
                 }
                 break;
-            case R.id.prox_pertura:
+            case R.id.lin_prox_pertura:
                 SportsWorldPreferences.setBranchType(getActivity(),
                         "Pr�ximas Aperturas");
                 specificBranchTypeList.putExtra(
                         SpecificBranchTypeListActivity.EXTRA_TYPE,
                         Branch.TYPE_COMING_SOON);
                 break;
-            case R.id.area_metro:
+            case R.id.lin_area_metro:
                 SportsWorldPreferences.setBranchType(getActivity(),
                         "D.F. y �rea metropolitana");
                 specificBranchTypeList.putExtra(
                         SpecificBranchTypeListActivity.EXTRA_TYPE, Branch.TYPE_DF);
                 break;
-            case R.id.foraneos:
+            case R.id.lin_foraneos:
                 SportsWorldPreferences.setBranchType(getActivity(), "For�neo");
                 specificBranchTypeList.putExtra(
                         SpecificBranchTypeListActivity.EXTRA_TYPE,
@@ -705,10 +722,17 @@ public class BranchTypesListFragment extends SherlockWorkingListFragment
 	public void loadImages(){
 
 		if(getRotation().equals("landscape") || getRotation().equals("portrait")) {
-			iClubes.setImageResource(R.drawable.studios_favoritos);
-			iAperturas.setImageResource(R.drawable.prox_aperturas);
-			iForaneos.setImageResource(R.drawable.foraneos);
-			iArea.setImageResource(R.drawable.area_metro);
+			iClubes.setImageResource(R.drawable.pantalla14_icono_clubesfavoritos);
+			iAperturas.setImageResource(R.drawable.pantalla14_icono_aperturas);
+			iForaneos.setImageResource(R.drawable.pantalla14_icono_foraneos);
+			iArea.setImageResource(R.drawable.pantalla14_icono_df_area);
+
+			/*	Agregar nombres al menu de clubes	*/
+
+			txtClubes.setText("Clubes");
+			txtAperturas.setText("Aperturas");
+			txtForaneos.setText("Foraneos");
+			txtArea.setText("DF");
 		}
 	}
 
